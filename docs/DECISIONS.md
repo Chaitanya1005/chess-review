@@ -100,3 +100,16 @@ Measured timings for that 33-move game (34 positions, MultiPV 2, this developmen
 ### D-018 · 2026-11-10 · Accepted — Threefold / fifty-move positions are scored by the engine, not by rules
 
 Only checkmate, stalemate and insufficient material are terminal by rules. Repetition and fifty-move draws are claimable rather than automatic in OTB games; the engine sees the history (D-007) and scores them itself.
+
+### D-019 · 2026-11-10 · Accepted — `cls-v1` finalised after real-game sanity checks (not a benchmark)
+
+The first draft of the Phase 2 rules was run on three real games at depth 16 (Opera Game 1858, Légal's mate pattern, Kasparov–Topalov 1999). Before any release, `cls-v1` was changed as follows, each in chess terms rather than fitted to these games:
+
+- **Great:** excluded getting out of check, capturing the piece the opponent just moved, and continuing a forced mate the mover already had. Before: Kasparov–Topalov had 19 Greats (Black 13), mostly forced king moves and recaptures, and 17.Rd8# in the Opera Game was Great. After: 11 Greats (Black 4), Rd8# is Best.
+- **Sacrifice detection:** ignore a lost piece that was already capturable before the move, and net out captured material in the static check. Before: 26.Qxd4+ (Kasparov) and 10.Nxb5 / 13.Rxd7 (Morphy) were Brilliant. After: Brilliants are 16.Qb8+ (Morphy), 5.Nxe5 (Légal), 25.Re7+, 30.Rxb7, 36.Bf1, 37.Rd7 (Kasparov).
+
+These three games are not a benchmark: there is no Chess.com reference data for them yet. Whether Chess.com labels 10.Nxb5 or Kasparov's forcing checks (27.b4+, 34.Qa1+, 35.Qb2+) as Great/Brilliant is an open question for Phase 4.
+
+### D-020 · 2026-11-10 · Accepted — `tsx` (dev only) for Node scripts
+
+`scripts/analyze-pgn.ts` imports the same TypeScript modules as the app (extensionless imports). `tsx` runs them without a build step. MIT, dev dependency only; it is not shipped.

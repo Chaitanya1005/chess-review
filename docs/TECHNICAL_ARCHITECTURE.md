@@ -46,6 +46,7 @@ There is no server-side code, database or authentication.
 | Charts | Hand-written SVG component | Validate (Phase 3) | The evaluation graph is one area chart with markers; a custom SVG avoids a dependency. Fallback: Recharts (MIT). |
 | State | React state + `useReducer` + context | Final | One review at a time; no global store library needed. |
 | Unit tests | Vitest | Final | Fast, TypeScript-native, runs Node for real-engine integration tests. |
+| Node scripts | tsx (dev only) | Final | Runs `scripts/analyze-pgn.ts` against the app's own TypeScript modules (D-020). |
 | Lint / format | ESLint (Next config) + Prettier defaults | Final | Standard for contributors. |
 | Hosting | Cloudflare Pages (static) | Validate (Phase 5) | Free tier, serves `.wasm` with the correct MIME type, no file-size issue (largest asset ≈1.8 MB). Vercel static works too. |
 
@@ -75,7 +76,8 @@ src/
     review/               Builds the final GameReview object (Phase 2)
   hooks/                  useGameAnalysis etc.
 public/engine/            Stockfish .js/.wasm, copied from node_modules at install time
-scripts/                  copy-engine.mjs, benchmark tooling (Phase 4)
+scripts/                  copy-engine.mjs, analyze-pgn.ts (Node review CLI), benchmark tooling (Phase 4)
+benchmarks/games/         sample PGNs (benchmark dataset grows here in Phase 4)
 tests/                    Vitest unit and integration tests
 ```
 

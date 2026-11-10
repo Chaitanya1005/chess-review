@@ -78,7 +78,7 @@ EP_white(mate for Black) = 0
 EP_black = 1 − EP_white
 ```
 
-The constant `0.00368208` is Lichess's fitted logistic coefficient [S4, S5]; Win% = 100 · EP. This model is **rating-independent**. [OURS] assumption: it is a reasonable first approximation. Phase 4 will test a rating-dependent coefficient `k(rating)` fitted to benchmark data, and Stockfish WDL as an alternative. All are behind `ExpectedPointsModel` in config.
+The constant `0.00368208` is Lichess's fitted logistic coefficient [S4, S5]; Win% = 100 · EP. The ±1000 cp clamp is [OURS]: S4 does not mention clamping, and we could not confirm Lichess's exact clamp from its source. This model is **rating-independent**. [OURS] assumption: it is a reasonable first approximation. Phase 4 will test a rating-dependent coefficient `k(rating)` fitted to benchmark data, and Stockfish WDL as an alternative. All are behind `ExpectedPointsModel` in config.
 
 ## 6. Move classification
 
@@ -117,8 +117,9 @@ Our rule (v1):
 
 1. The move is `isEngineBest`.
 2. The position was **critical**: MultiPV line 2 exists and `EP(line1) − EP(line2) ≥ greatOnlyMoveGap` (default 0.15) for the mover. In other words, the second-best move would have been at least a Mistake.
-3. Not trivial: the position had more than one legal move, and the move is not a plain recapture (capturing on the square where the opponent just captured, with a piece value equal to or lower than the opponent's capture).
+3. Not trivial: the position had more than one legal move; the move does not capture the piece the opponent just moved (recaptures, accepting an offered piece); and the mover was not in check (getting out of check is forcing, even when only one reply holds).
 4. Not already decided: line 2 still leaves the mover below `greatMaxSecondEP` (default 0.90). If even the second-best move is completely winning, the best move is not "critical".
+5. Not continuing a forced mate the mover already had (e.g. delivering mate in 1).
 
 Rating-dependent generosity is not modelled in v1.
 
@@ -151,12 +152,13 @@ Piece values: P=1, N=3, B=3, R=5, Q=9, K=0.
 
 A move by side *c* is a **sacrifice** if either:
 
-- **Accepted along the PV.** Starting at the position after the move, follow `after.lines[0].pv` for up to `sacrificePvPlies` (default 6) plies. Track *c*'s material balance relative to the position before the move. If the minimum balance reaches `−sacrificeMinValue` or lower, and the material lost includes a non-pawn piece of *c*, it is a sacrifice. Material recovered later in the line does not cancel it (a sound sacrifice usually wins material back or mates).
-- **Offered statically.** After the move, the moved piece (non-pawn) stands on a square attacked by the opponent, and either the square is undefended, or it is attacked by a lower-value piece. This catches sacrifices the engine shows as declined.
+- **Accepted along the PV.** Starting at the position after the move, follow `after.lines[0].pv` for up to `sacrificePvPlies` (default 6) plies. Track *c*'s material balance relative to the position before the move. It is a sacrifice when, after an opponent move, *c* is down at least `sacrificeMinValue` **and still is after *c*'s next move** (or the line ends there), and the opponent captured a non-pawn piece of *c* along the way. The persistence check keeps ordinary trades (Nc3 Bxc3+ bxc3) out. Material recovered later does not cancel it (a sound sacrifice usually wins material back or mates).
+  - A piece that was **already capturable before the move** (found by letting the opponent move in the position before) does not count: losing it is not caused by this move.
+- **Offered statically.** After the move, the moved piece (non-pawn, non-king) stands on a square where the opponent has a legal capture, and either the square is undefended or the cheapest capturer is worth less. The amount given up is `(undefended ? value : value − cheapest capturer) − value captured by the move`, and must be ≥ `sacrificeMinValue`. This catches sacrifices the engine shows as declined (e.g. Légal's 5.Nxe5).
 
 Exclusions: captures where *c* takes material at least equal to what it can lose (for example, `QxQ` that can be recaptured); promotions that are simple trades; moves out of check with only that piece able to block are still allowed.
 
-This is an approximation that will be tuned in Phase 4. It is deliberately conservative: false Brilliants hurt credibility more than missed ones.
+This is an approximation that will be tuned in Phase 4. It is deliberately conservative: false Brilliants hurt credibility more than missed ones. Known consequence: a knight for two pawns (net −1, e.g. Morphy's 10.Nxb5 in the Opera Game) is **not** a sacrifice with `sacrificeMinValue = 2`.
 
 ## 8. Accuracy [LICHESS-PUBLIC method; CAPS2 not reproduced]
 
@@ -177,7 +179,7 @@ Per player:
 1. Build the White-POV Win% series over all positions (start position included).
 2. `windowSize = clamp(floor((nPositions − 1) / 10), 2, 8)` (computed from the number of moves).
 3. Volatility weights: for each move, the standard deviation of Win% in its sliding window, clamped to [0.5, 12]. The first moves use the first window.
-4. `weighted = Σ(w·acc) / Σw` and `harmonic = n / Σ(1/acc)` over the player's moves (`acc` floored at a small epsilon to avoid division by zero).
+4. `weighted = Σ(w·acc) / Σw` and `harmonic = n / Σ(1/max(acc, 1))` over the player's moves. The floor of 1 inside the harmonic mean is [OURS]; we could not confirm how Lichess's helper treats zero.
 5. `accuracy = (weighted + harmonic) / 2`, bounded to [0, 100].
 
 Notes:
@@ -230,17 +232,19 @@ A position is **critical** for the side to move when `EP(line1) − EP(line2) �
 
 ## 13. Configurable thresholds
 
-All parameters live in `src/lib/analysis/config.ts` as one object with a version string, for example:
+All parameters live in `src/lib/analysis/config.ts` (`REVIEW_CONFIG`) as one object with a version string:
 
 ```ts
 export const CLASSIFICATION_CONFIG = {
   version: "cls-v1",
   expectedPoints: { model: "logistic", k: 0.00368208, cpClamp: 1000 },
   thresholds: { excellent: 0.02, good: 0.05, inaccuracy: 0.10, mistake: 0.20 },
-  great: { onlyMoveGap: 0.15, maxSecondEP: 0.90 },
+  great: { onlyMoveGap: 0.15, maxSecondEP: 0.90, excludeForcedMate: true, excludeCaptureOfLastMoved: true, excludeCheckResponses: true },
   brilliant: { maxLoss: 0.02, minEPAfter: 0.45, maxEPWithout: 0.95, sacrificeMinValue: 2, sacrificePvPlies: 6 },
-  miss: { opportunityGain: 0.10, minLoss: 0.10, giveBackMargin: 0.05 },
-  phases: { openingMaxPly: 30, middlegameMaxPieces: 10, endgameMaxPieces: 6 },
+  miss: { opportunityGain: 0.10, minLoss: 0.10, giveBackMargin: 0.05, stillWinningEP: 0.95 },
+  accuracy: { harmonicFloor: 1, minWindow: 2, maxWindow: 8, minWeight: 0.5, maxWeight: 12 },
+  phases: { openingMaxPly: 30, middlegameMaxPieces: 10, endgameMaxPieces: 6, sparseBackRank: 4 },
+  rating: { calibrated: false, min: 100, max: 3200, table: [/* placeholder, see §9 */] },
 } as const;
 ```
 

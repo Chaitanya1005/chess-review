@@ -36,4 +36,5 @@ npm test             # unit + real-engine integration tests (Vitest)
 npm run typecheck
 npm run lint
 npm run build        # static export to out/
+npm run analyze -- game.pgn --depth 16   # full review in Node (same engine); --out file.json freezes it
 ```
