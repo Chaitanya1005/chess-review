@@ -1,0 +1,5008 @@
+{
+  "analysis": {
+    "game": {
+      "headers": {
+        "Event": "Paris",
+        "Site": "Paris FRA",
+        "Date": "1858.??.??",
+        "Round": "?",
+        "White": "Paul Morphy",
+        "Black": "Duke Karl / Count Isouard",
+        "Result": "1-0",
+        "ECO": "C41"
+      },
+      "startFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "moves": [
+        {
+          "ply": 1,
+          "moveNumber": 1,
+          "color": "w",
+          "san": "e4",
+          "uci": "e2e4",
+          "from": "e2",
+          "to": "e4",
+          "piece": "p",
+          "fenBefore": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "fenAfter": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"
+        },
+        {
+          "ply": 2,
+          "moveNumber": 1,
+          "color": "b",
+          "san": "e5",
+          "uci": "e7e5",
+          "from": "e7",
+          "to": "e5",
+          "piece": "p",
+          "fenBefore": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "fenAfter": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+        },
+        {
+          "ply": 3,
+          "moveNumber": 2,
+          "color": "w",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "from": "g1",
+          "to": "f3",
+          "piece": "n",
+          "fenBefore": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "fenAfter": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2"
+        },
+        {
+          "ply": 4,
+          "moveNumber": 2,
+          "color": "b",
+          "san": "d6",
+          "uci": "d7d6",
+          "from": "d7",
+          "to": "d6",
+          "piece": "p",
+          "fenBefore": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "fenAfter": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3"
+        },
+        {
+          "ply": 5,
+          "moveNumber": 3,
+          "color": "w",
+          "san": "d4",
+          "uci": "d2d4",
+          "from": "d2",
+          "to": "d4",
+          "piece": "p",
+          "fenBefore": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+          "fenAfter": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"
+        },
+        {
+          "ply": 6,
+          "moveNumber": 3,
+          "color": "b",
+          "san": "Bg4",
+          "uci": "c8g4",
+          "from": "c8",
+          "to": "g4",
+          "piece": "b",
+          "fenBefore": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+          "fenAfter": "rn1qkbnr/ppp2ppp/3p4/4p3/3PP1b1/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4"
+        },
+        {
+          "ply": 7,
+          "moveNumber": 4,
+          "color": "w",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "from": "d4",
+          "to": "e5",
+          "piece": "p",
+          "captured": "p",
+          "fenBefore": "rn1qkbnr/ppp2ppp/3p4/4p3/3PP1b1/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4",
+          "fenAfter": "rn1qkbnr/ppp2ppp/3p4/4P3/4P1b1/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4"
+        },
+        {
+          "ply": 8,
+          "moveNumber": 4,
+          "color": "b",
+          "san": "Bxf3",
+          "uci": "g4f3",
+          "from": "g4",
+          "to": "f3",
+          "piece": "b",
+          "captured": "n",
+          "fenBefore": "rn1qkbnr/ppp2ppp/3p4/4P3/4P1b1/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+          "fenAfter": "rn1qkbnr/ppp2ppp/3p4/4P3/4P3/5b2/PPP2PPP/RNBQKB1R w KQkq - 0 5"
+        },
+        {
+          "ply": 9,
+          "moveNumber": 5,
+          "color": "w",
+          "san": "Qxf3",
+          "uci": "d1f3",
+          "from": "d1",
+          "to": "f3",
+          "piece": "q",
+          "captured": "b",
+          "fenBefore": "rn1qkbnr/ppp2ppp/3p4/4P3/4P3/5b2/PPP2PPP/RNBQKB1R w KQkq - 0 5",
+          "fenAfter": "rn1qkbnr/ppp2ppp/3p4/4P3/4P3/5Q2/PPP2PPP/RNB1KB1R b KQkq - 0 5"
+        },
+        {
+          "ply": 10,
+          "moveNumber": 5,
+          "color": "b",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "from": "d6",
+          "to": "e5",
+          "piece": "p",
+          "captured": "p",
+          "fenBefore": "rn1qkbnr/ppp2ppp/3p4/4P3/4P3/5Q2/PPP2PPP/RNB1KB1R b KQkq - 0 5",
+          "fenAfter": "rn1qkbnr/ppp2ppp/8/4p3/4P3/5Q2/PPP2PPP/RNB1KB1R w KQkq - 0 6"
+        },
+        {
+          "ply": 11,
+          "moveNumber": 6,
+          "color": "w",
+          "san": "Bc4",
+          "uci": "f1c4",
+          "from": "f1",
+          "to": "c4",
+          "piece": "b",
+          "fenBefore": "rn1qkbnr/ppp2ppp/8/4p3/4P3/5Q2/PPP2PPP/RNB1KB1R w KQkq - 0 6",
+          "fenAfter": "rn1qkbnr/ppp2ppp/8/4p3/2B1P3/5Q2/PPP2PPP/RNB1K2R b KQkq - 1 6"
+        },
+        {
+          "ply": 12,
+          "moveNumber": 6,
+          "color": "b",
+          "san": "Nf6",
+          "uci": "g8f6",
+          "from": "g8",
+          "to": "f6",
+          "piece": "n",
+          "fenBefore": "rn1qkbnr/ppp2ppp/8/4p3/2B1P3/5Q2/PPP2PPP/RNB1K2R b KQkq - 1 6",
+          "fenAfter": "rn1qkb1r/ppp2ppp/5n2/4p3/2B1P3/5Q2/PPP2PPP/RNB1K2R w KQkq - 2 7"
+        },
+        {
+          "ply": 13,
+          "moveNumber": 7,
+          "color": "w",
+          "san": "Qb3",
+          "uci": "f3b3",
+          "from": "f3",
+          "to": "b3",
+          "piece": "q",
+          "fenBefore": "rn1qkb1r/ppp2ppp/5n2/4p3/2B1P3/5Q2/PPP2PPP/RNB1K2R w KQkq - 2 7",
+          "fenAfter": "rn1qkb1r/ppp2ppp/5n2/4p3/2B1P3/1Q6/PPP2PPP/RNB1K2R b KQkq - 3 7"
+        },
+        {
+          "ply": 14,
+          "moveNumber": 7,
+          "color": "b",
+          "san": "Qe7",
+          "uci": "d8e7",
+          "from": "d8",
+          "to": "e7",
+          "piece": "q",
+          "fenBefore": "rn1qkb1r/ppp2ppp/5n2/4p3/2B1P3/1Q6/PPP2PPP/RNB1K2R b KQkq - 3 7",
+          "fenAfter": "rn2kb1r/ppp1qppp/5n2/4p3/2B1P3/1Q6/PPP2PPP/RNB1K2R w KQkq - 4 8"
+        },
+        {
+          "ply": 15,
+          "moveNumber": 8,
+          "color": "w",
+          "san": "Nc3",
+          "uci": "b1c3",
+          "from": "b1",
+          "to": "c3",
+          "piece": "n",
+          "fenBefore": "rn2kb1r/ppp1qppp/5n2/4p3/2B1P3/1Q6/PPP2PPP/RNB1K2R w KQkq - 4 8",
+          "fenAfter": "rn2kb1r/ppp1qppp/5n2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R b KQkq - 5 8"
+        },
+        {
+          "ply": 16,
+          "moveNumber": 8,
+          "color": "b",
+          "san": "c6",
+          "uci": "c7c6",
+          "from": "c7",
+          "to": "c6",
+          "piece": "p",
+          "fenBefore": "rn2kb1r/ppp1qppp/5n2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R b KQkq - 5 8",
+          "fenAfter": "rn2kb1r/pp2qppp/2p2n2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R w KQkq - 0 9"
+        },
+        {
+          "ply": 17,
+          "moveNumber": 9,
+          "color": "w",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "from": "c1",
+          "to": "g5",
+          "piece": "b",
+          "fenBefore": "rn2kb1r/pp2qppp/2p2n2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R w KQkq - 0 9",
+          "fenAfter": "rn2kb1r/pp2qppp/2p2n2/4p1B1/2B1P3/1QN5/PPP2PPP/R3K2R b KQkq - 1 9"
+        },
+        {
+          "ply": 18,
+          "moveNumber": 9,
+          "color": "b",
+          "san": "b5",
+          "uci": "b7b5",
+          "from": "b7",
+          "to": "b5",
+          "piece": "p",
+          "fenBefore": "rn2kb1r/pp2qppp/2p2n2/4p1B1/2B1P3/1QN5/PPP2PPP/R3K2R b KQkq - 1 9",
+          "fenAfter": "rn2kb1r/p3qppp/2p2n2/1p2p1B1/2B1P3/1QN5/PPP2PPP/R3K2R w KQkq - 0 10"
+        },
+        {
+          "ply": 19,
+          "moveNumber": 10,
+          "color": "w",
+          "san": "Nxb5",
+          "uci": "c3b5",
+          "from": "c3",
+          "to": "b5",
+          "piece": "n",
+          "captured": "p",
+          "fenBefore": "rn2kb1r/p3qppp/2p2n2/1p2p1B1/2B1P3/1QN5/PPP2PPP/R3K2R w KQkq - 0 10",
+          "fenAfter": "rn2kb1r/p3qppp/2p2n2/1N2p1B1/2B1P3/1Q6/PPP2PPP/R3K2R b KQkq - 0 10"
+        },
+        {
+          "ply": 20,
+          "moveNumber": 10,
+          "color": "b",
+          "san": "cxb5",
+          "uci": "c6b5",
+          "from": "c6",
+          "to": "b5",
+          "piece": "p",
+          "captured": "n",
+          "fenBefore": "rn2kb1r/p3qppp/2p2n2/1N2p1B1/2B1P3/1Q6/PPP2PPP/R3K2R b KQkq - 0 10",
+          "fenAfter": "rn2kb1r/p3qppp/5n2/1p2p1B1/2B1P3/1Q6/PPP2PPP/R3K2R w KQkq - 0 11"
+        },
+        {
+          "ply": 21,
+          "moveNumber": 11,
+          "color": "w",
+          "san": "Bxb5+",
+          "uci": "c4b5",
+          "from": "c4",
+          "to": "b5",
+          "piece": "b",
+          "captured": "p",
+          "fenBefore": "rn2kb1r/p3qppp/5n2/1p2p1B1/2B1P3/1Q6/PPP2PPP/R3K2R w KQkq - 0 11",
+          "fenAfter": "rn2kb1r/p3qppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/R3K2R b KQkq - 0 11"
+        },
+        {
+          "ply": 22,
+          "moveNumber": 11,
+          "color": "b",
+          "san": "Nbd7",
+          "uci": "b8d7",
+          "from": "b8",
+          "to": "d7",
+          "piece": "n",
+          "fenBefore": "rn2kb1r/p3qppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/R3K2R b KQkq - 0 11",
+          "fenAfter": "r3kb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/R3K2R w KQkq - 1 12"
+        },
+        {
+          "ply": 23,
+          "moveNumber": 12,
+          "color": "w",
+          "san": "O-O-O",
+          "uci": "e1c1",
+          "from": "e1",
+          "to": "c1",
+          "piece": "k",
+          "fenBefore": "r3kb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/R3K2R w KQkq - 1 12",
+          "fenAfter": "r3kb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR3R b kq - 2 12"
+        },
+        {
+          "ply": 24,
+          "moveNumber": 12,
+          "color": "b",
+          "san": "Rd8",
+          "uci": "a8d8",
+          "from": "a8",
+          "to": "d8",
+          "piece": "r",
+          "fenBefore": "r3kb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR3R b kq - 2 12",
+          "fenAfter": "3rkb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR3R w k - 3 13"
+        },
+        {
+          "ply": 25,
+          "moveNumber": 13,
+          "color": "w",
+          "san": "Rxd7",
+          "uci": "d1d7",
+          "from": "d1",
+          "to": "d7",
+          "piece": "r",
+          "captured": "n",
+          "fenBefore": "3rkb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR3R w k - 3 13",
+          "fenAfter": "3rkb1r/p2Rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2K4R b k - 0 13"
+        },
+        {
+          "ply": 26,
+          "moveNumber": 13,
+          "color": "b",
+          "san": "Rxd7",
+          "uci": "d8d7",
+          "from": "d8",
+          "to": "d7",
+          "piece": "r",
+          "captured": "r",
+          "fenBefore": "3rkb1r/p2Rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2K4R b k - 0 13",
+          "fenAfter": "4kb1r/p2rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2K4R w k - 0 14"
+        },
+        {
+          "ply": 27,
+          "moveNumber": 14,
+          "color": "w",
+          "san": "Rd1",
+          "uci": "h1d1",
+          "from": "h1",
+          "to": "d1",
+          "piece": "r",
+          "fenBefore": "4kb1r/p2rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2K4R w k - 0 14",
+          "fenAfter": "4kb1r/p2rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 1 14"
+        },
+        {
+          "ply": 28,
+          "moveNumber": 14,
+          "color": "b",
+          "san": "Qe6",
+          "uci": "e7e6",
+          "from": "e7",
+          "to": "e6",
+          "piece": "q",
+          "fenBefore": "4kb1r/p2rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 1 14",
+          "fenAfter": "4kb1r/p2r1ppp/4qn2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 2 15"
+        },
+        {
+          "ply": 29,
+          "moveNumber": 15,
+          "color": "w",
+          "san": "Bxd7+",
+          "uci": "b5d7",
+          "from": "b5",
+          "to": "d7",
+          "piece": "b",
+          "captured": "r",
+          "fenBefore": "4kb1r/p2r1ppp/4qn2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 2 15",
+          "fenAfter": "4kb1r/p2B1ppp/4qn2/4p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 0 15"
+        },
+        {
+          "ply": 30,
+          "moveNumber": 15,
+          "color": "b",
+          "san": "Nxd7",
+          "uci": "f6d7",
+          "from": "f6",
+          "to": "d7",
+          "piece": "n",
+          "captured": "b",
+          "fenBefore": "4kb1r/p2B1ppp/4qn2/4p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 0 15",
+          "fenAfter": "4kb1r/p2n1ppp/4q3/4p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 0 16"
+        },
+        {
+          "ply": 31,
+          "moveNumber": 16,
+          "color": "w",
+          "san": "Qb8+",
+          "uci": "b3b8",
+          "from": "b3",
+          "to": "b8",
+          "piece": "q",
+          "fenBefore": "4kb1r/p2n1ppp/4q3/4p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 0 16",
+          "fenAfter": "1Q2kb1r/p2n1ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 b k - 1 16"
+        },
+        {
+          "ply": 32,
+          "moveNumber": 16,
+          "color": "b",
+          "san": "Nxb8",
+          "uci": "d7b8",
+          "from": "d7",
+          "to": "b8",
+          "piece": "n",
+          "captured": "q",
+          "fenBefore": "1Q2kb1r/p2n1ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 b k - 1 16",
+          "fenAfter": "1n2kb1r/p4ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 w k - 0 17"
+        },
+        {
+          "ply": 33,
+          "moveNumber": 17,
+          "color": "w",
+          "san": "Rd8#",
+          "uci": "d1d8",
+          "from": "d1",
+          "to": "d8",
+          "piece": "r",
+          "fenBefore": "1n2kb1r/p4ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 w k - 0 17",
+          "fenAfter": "1n1Rkb1r/p4ppp/4q3/4p1B1/4P3/8/PPP2PPP/2K5 b k - 1 17"
+        }
+      ],
+      "result": "1-0",
+      "warnings": []
+    },
+    "positions": [
+      {
+        "ply": 0,
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 26
+        },
+        "wdl": [
+          50,
+          943,
+          7
+        ],
+        "bestMove": "e2e4",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 26
+            },
+            "wdl": [
+              50,
+              943,
+              7
+            ],
+            "pv": [
+              "e2e4",
+              "e7e5",
+              "g1f3",
+              "b8c6",
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "g8f6",
+              "d4c6",
+              "d7c6",
+              "d1d8",
+              "e8d8",
+              "b1c3",
+              "c8e6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 25
+            },
+            "wdl": [
+              48,
+              945,
+              7
+            ],
+            "pv": [
+              "d2d4",
+              "d7d5",
+              "c2c4",
+              "e7e6",
+              "b1c3",
+              "g8f6",
+              "c1g5",
+              "f8e7",
+              "e2e3",
+              "e8g8",
+              "g1f3",
+              "h7h6",
+              "g5h4",
+              "f6e4",
+              "h4e7",
+              "d8e7",
+              "d1c2",
+              "e4c3",
+              "c2c3"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 1,
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 36
+        },
+        "wdl": [
+          74,
+          922,
+          4
+        ],
+        "bestMove": "e7e5",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 36
+            },
+            "wdl": [
+              74,
+              922,
+              4
+            ],
+            "pv": [
+              "e7e5",
+              "g1f3",
+              "b8c6",
+              "f1b5",
+              "a7a6",
+              "b5a4",
+              "g8f6",
+              "e1g1",
+              "f6e4",
+              "f1e1",
+              "e4c5",
+              "a4c6",
+              "d7c6",
+              "f3e5",
+              "c5e6",
+              "b1c3",
+              "d8d4"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 40
+            },
+            "wdl": [
+              85,
+              911,
+              4
+            ],
+            "pv": [
+              "e7e6",
+              "d2d4",
+              "d7d5",
+              "e4e5",
+              "c7c5",
+              "c2c3",
+              "b8c6",
+              "g1f3",
+              "d8b6",
+              "h2h4",
+              "c5d4",
+              "c3d4",
+              "g8e7",
+              "b1c3",
+              "e7f5",
+              "c3a4",
+              "b6c7",
+              "h4h5"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 2,
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 28
+        },
+        "wdl": [
+          54,
+          940,
+          6
+        ],
+        "bestMove": "g1f3",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 28
+            },
+            "wdl": [
+              54,
+              940,
+              6
+            ],
+            "pv": [
+              "g1f3",
+              "b8c6",
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "g8f6",
+              "d4c6",
+              "b7c6",
+              "e4e5",
+              "d8e7",
+              "d1e2",
+              "f6d5",
+              "c2c4",
+              "c8a6",
+              "a2a3"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 1
+            },
+            "wdl": [
+              19,
+              963,
+              18
+            ],
+            "pv": [
+              "b1c3",
+              "g8f6",
+              "g1f3",
+              "b8c6",
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "f8b4",
+              "d4c6",
+              "b7c6",
+              "f1d3",
+              "e8g8",
+              "e1g1",
+              "d7d5",
+              "e4d5",
+              "c6d5",
+              "a2a3",
+              "b4e7",
+              "f1e1",
+              "c7c6",
+              "c1f4",
+              "e7d6"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 3,
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 28
+        },
+        "wdl": [
+          53,
+          941,
+          6
+        ],
+        "bestMove": "b8c6",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 28
+            },
+            "wdl": [
+              53,
+              941,
+              6
+            ],
+            "pv": [
+              "b8c6",
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "g8f6",
+              "d4c6",
+              "b7c6",
+              "f1d3",
+              "d7d5",
+              "e4e5",
+              "f6g4",
+              "e1g1",
+              "f8c5",
+              "c1f4",
+              "c5f2",
+              "f1f2",
+              "g4f2",
+              "g1f2",
+              "d8h4",
+              "f4g3",
+              "h4d4",
+              "f2f1"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 42
+            },
+            "wdl": [
+              89,
+              907,
+              4
+            ],
+            "pv": [
+              "g8f6",
+              "f3e5",
+              "d7d6",
+              "e5f3",
+              "f6e4",
+              "d2d4",
+              "d6d5",
+              "f1d3",
+              "f8d6",
+              "e1g1",
+              "e8g8",
+              "c2c4",
+              "c7c6",
+              "b1c3",
+              "e4c3",
+              "b2c3",
+              "d5c4",
+              "d3c4",
+              "c8g4",
+              "h2h3",
+              "g4h5",
+              "g2g4",
+              "h5g6",
+              "f1e1"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 4,
+        "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 61
+        },
+        "wdl": [
+          177,
+          821,
+          2
+        ],
+        "bestMove": "d2d4",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 61
+            },
+            "wdl": [
+              177,
+              821,
+              2
+            ],
+            "pv": [
+              "d2d4",
+              "g8f6",
+              "d4e5",
+              "f6e4",
+              "f1c4",
+              "d6e5",
+              "d1d8",
+              "e8d8",
+              "f3e5"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 37
+            },
+            "wdl": [
+              77,
+              919,
+              4
+            ],
+            "pv": [
+              "f1c4",
+              "g8f6",
+              "b1c3",
+              "f8e7",
+              "d2d4",
+              "e5d4",
+              "f3d4",
+              "e8g8",
+              "h2h3",
+              "a7a6",
+              "e1g1",
+              "b8c6",
+              "d4c6",
+              "b7c6",
+              "f1e1"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 5,
+        "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 42
+        },
+        "wdl": [
+          92,
+          905,
+          3
+        ],
+        "bestMove": "g8f6",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 42
+            },
+            "wdl": [
+              92,
+              905,
+              3
+            ],
+            "pv": [
+              "g8f6",
+              "d4e5",
+              "f6e4",
+              "f1c4",
+              "c7c6",
+              "e5d6",
+              "f8d6",
+              "e1g1",
+              "e8g8",
+              "f1e1",
+              "c8f5",
+              "b1d2",
+              "d6c5",
+              "d2e4",
+              "d8d1",
+              "e1d1",
+              "f5e4",
+              "c2c3"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 49
+            },
+            "wdl": [
+              116,
+              881,
+              3
+            ],
+            "pv": [
+              "e5d4",
+              "f3d4",
+              "f8e7",
+              "b1c3",
+              "b8c6",
+              "c1e3",
+              "g8f6",
+              "f2f3",
+              "e8g8",
+              "d1d2",
+              "c6d4",
+              "d2d4",
+              "c7c6",
+              "e1c1",
+              "b7b5",
+              "h2h4",
+              "f6d7"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 6,
+        "fen": "rn1qkbnr/ppp2ppp/3p4/4p3/3PP1b1/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 118
+        },
+        "wdl": [
+          674,
+          326,
+          0
+        ],
+        "bestMove": "c1e3",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 118
+            },
+            "wdl": [
+              674,
+              326,
+              0
+            ],
+            "pv": [
+              "c1e3",
+              "b8d7",
+              "b1c3",
+              "f8e7",
+              "h2h3",
+              "g4f3",
+              "d1f3",
+              "e7f6",
+              "f1c4",
+              "g8e7",
+              "d4d5",
+              "a7a6",
+              "c4e2"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 98
+            },
+            "wdl": [
+              481,
+              519,
+              0
+            ],
+            "pv": [
+              "d4e5",
+              "b8d7",
+              "e5d6",
+              "f8d6",
+              "b1c3",
+              "g8f6",
+              "f1e2",
+              "d6b4",
+              "c1d2",
+              "d8e7",
+              "h2h3",
+              "g4f3",
+              "e2f3"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 7,
+        "fen": "rn1qkbnr/ppp2ppp/3p4/4P3/4P1b1/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 104
+        },
+        "wdl": [
+          538,
+          462,
+          0
+        ],
+        "bestMove": "b8c6",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 104
+            },
+            "wdl": [
+              538,
+              462,
+              0
+            ],
+            "pv": [
+              "b8c6",
+              "e5d6",
+              "f8d6",
+              "f1b5",
+              "g8e7",
+              "h2h3",
+              "g4h5",
+              "b1c3",
+              "a7a6",
+              "b5e2",
+              "e8g8",
+              "e1g1",
+              "d8e8",
+              "f3h4",
+              "h5e2",
+              "d1e2",
+              "f7f5",
+              "e4f5",
+              "e7f5",
+              "h4f5"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 124
+            },
+            "wdl": [
+              723,
+              277,
+              0
+            ],
+            "pv": [
+              "b8d7",
+              "e5d6",
+              "f8d6",
+              "f1e2",
+              "g8f6",
+              "f3d4",
+              "g4e2",
+              "d1e2",
+              "e8g8",
+              "f2f3",
+              "d6e5",
+              "d4f5",
+              "g7g6",
+              "f5h6",
+              "g8g7",
+              "b1c3",
+              "d8e7",
+              "e1g1",
+              "a7a5",
+              "g1h1",
+              "a5a4",
+              "a2a3"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 8,
+        "fen": "rn1qkbnr/ppp2ppp/3p4/4P3/4P3/5b2/PPP2PPP/RNBQKB1R w KQkq - 0 5",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 123
+        },
+        "wdl": [
+          723,
+          277,
+          0
+        ],
+        "bestMove": "d1f3",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 123
+            },
+            "wdl": [
+              723,
+              277,
+              0
+            ],
+            "pv": [
+              "d1f3",
+              "d6e5",
+              "f3b3",
+              "b8d7",
+              "c1e3",
+              "f8c5",
+              "e3c5",
+              "d7c5",
+              "b3b5",
+              "c5d7",
+              "b5b7",
+              "a8b8",
+              "b7a7",
+              "b8b2",
+              "f1d3",
+              "b2b8",
+              "a7a3",
+              "g8e7",
+              "e1g1"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 90
+            },
+            "wdl": [
+              391,
+              609,
+              0
+            ],
+            "pv": [
+              "g2f3",
+              "b8c6",
+              "c2c3",
+              "d6e5",
+              "d1b3",
+              "a8b8",
+              "c1e3",
+              "f8d6",
+              "b1a3",
+              "g8f6",
+              "a3c4"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 9,
+        "fen": "rn1qkbnr/ppp2ppp/3p4/4P3/4P3/5Q2/PPP2PPP/RNB1KB1R b KQkq - 0 5",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 170
+        },
+        "wdl": [
+          957,
+          43,
+          0
+        ],
+        "bestMove": "d6e5",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 170
+            },
+            "wdl": [
+              957,
+              43,
+              0
+            ],
+            "pv": [
+              "d6e5",
+              "f3b3",
+              "b8d7",
+              "c1e3",
+              "f8c5",
+              "e3c5",
+              "d7c5",
+              "b3b5",
+              "c5d7",
+              "b5b7",
+              "a8b8",
+              "b7a7",
+              "b8b2",
+              "f1d3",
+              "g8e7",
+              "a7a3",
+              "b2b6",
+              "e1g1",
+              "e8g8",
+              "b1c3",
+              "e7c6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 173
+            },
+            "wdl": [
+              962,
+              38,
+              0
+            ],
+            "pv": [
+              "b8d7",
+              "e5d6",
+              "f8d6",
+              "b1c3",
+              "g8f6",
+              "c1f4",
+              "d7e5",
+              "f3e2",
+              "e5d3",
+              "e2d3",
+              "d6f4",
+              "g2g3",
+              "d8d3",
+              "f1d3",
+              "f4e5",
+              "f2f4",
+              "e5c3",
+              "b2c3",
+              "e8c8",
+              "e1c1",
+              "f6g4",
+              "d1d2",
+              "f7f6",
+              "h2h3",
+              "g4e3",
+              "h1e1"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 10,
+        "fen": "rn1qkbnr/ppp2ppp/8/4p3/4P3/5Q2/PPP2PPP/RNB1KB1R w KQkq - 0 6",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 154
+        },
+        "wdl": [
+          918,
+          82,
+          0
+        ],
+        "bestMove": "f3b3",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 154
+            },
+            "wdl": [
+              918,
+              82,
+              0
+            ],
+            "pv": [
+              "f3b3",
+              "b8d7",
+              "c1e3",
+              "f8c5",
+              "e3c5",
+              "d7c5",
+              "b3b5",
+              "c5d7",
+              "b5b7",
+              "a8b8",
+              "b7a7",
+              "b8b2",
+              "f1d3",
+              "g8e7",
+              "a7a3",
+              "b2b6",
+              "e1g1",
+              "e8g8",
+              "b1c3",
+              "d7f6",
+              "f1d1",
+              "e7c6",
+              "c3d5",
+              "b6b8",
+              "d5f6",
+              "d8f6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 132
+            },
+            "wdl": [
+              805,
+              195,
+              0
+            ],
+            "pv": [
+              "f1c4",
+              "d8f6",
+              "f3b3",
+              "b8d7",
+              "b3b7",
+              "a8b8",
+              "b7a6",
+              "f6a6",
+              "c4a6",
+              "d7c5",
+              "a6d3",
+              "c5d3",
+              "c2d3",
+              "g8e7",
+              "b1d2",
+              "e7c6",
+              "d2c4",
+              "f8b4",
+              "c1d2",
+              "a7a5"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 11,
+        "fen": "rn1qkbnr/ppp2ppp/8/4p3/2B1P3/5Q2/PPP2PPP/RNB1K2R b KQkq - 1 6",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 139
+        },
+        "wdl": [
+          854,
+          146,
+          0
+        ],
+        "bestMove": "d8f6",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 139
+            },
+            "wdl": [
+              854,
+              146,
+              0
+            ],
+            "pv": [
+              "d8f6",
+              "f3b3",
+              "b8d7",
+              "b3b7",
+              "a8b8",
+              "b7a6",
+              "f6a6",
+              "c4a6",
+              "d7c5",
+              "a6d3",
+              "c5d3",
+              "c2d3",
+              "g8e7",
+              "b1d2",
+              "c7c6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 139
+            },
+            "wdl": [
+              854,
+              146,
+              0
+            ],
+            "pv": [
+              "d8d7",
+              "b1c3",
+              "b8c6",
+              "c1e3",
+              "g8f6",
+              "c3d5",
+              "f6d5",
+              "e1c1",
+              "f8d6",
+              "c4d5",
+              "e8g8",
+              "c1b1",
+              "a7a5"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 12,
+        "fen": "rn1qkb1r/ppp2ppp/5n2/4p3/2B1P3/5Q2/PPP2PPP/RNB1K2R w KQkq - 2 7",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 274
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "f3b3",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 274
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "f3b3",
+              "f8c5",
+              "c4f7",
+              "e8f8",
+              "f7d5",
+              "c7c6",
+              "d5c4",
+              "f6e4",
+              "b1d2",
+              "e4d6",
+              "d2f3",
+              "b8d7",
+              "c4e6",
+              "d7f6",
+              "e1g1",
+              "e5e4",
+              "f3e5",
+              "d8e7"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 110
+            },
+            "wdl": [
+              614,
+              386,
+              0
+            ],
+            "pv": [
+              "c1e3",
+              "b8d7",
+              "g2g4",
+              "h7h6",
+              "h2h4",
+              "f8c5",
+              "g4g5",
+              "h6g5",
+              "h4g5",
+              "h8h1",
+              "f3h1",
+              "c5e3",
+              "f2e3",
+              "f6g8",
+              "h1h8",
+              "e8f8",
+              "h8h5",
+              "d8e7",
+              "b1d2",
+              "d7b6",
+              "c4b3",
+              "g7g6"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 13,
+        "fen": "rn1qkb1r/ppp2ppp/5n2/4p3/2B1P3/1Q6/PPP2PPP/RNB1K2R b KQkq - 3 7",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 270
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "f8c5",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 270
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "f8c5",
+              "c4f7",
+              "e8e7",
+              "f7d5",
+              "c7c6",
+              "d5c4",
+              "b7b5",
+              "c4e2",
+              "d8g8",
+              "b3h3",
+              "b8d7",
+              "b1d2",
+              "h7h6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 312
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "d8e7",
+              "b3b7",
+              "e7b4",
+              "b7b4",
+              "f8b4",
+              "c1d2",
+              "a7a5",
+              "b1c3",
+              "b8d7",
+              "e1c1",
+              "c7c6",
+              "f2f3"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 14,
+        "fen": "rn2kb1r/ppp1qppp/5n2/4p3/2B1P3/1Q6/PPP2PPP/RNB1K2R w KQkq - 4 8",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 299
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "b3b7",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 299
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "b3b7",
+              "e7b4",
+              "b7b4",
+              "f8b4",
+              "c1d2",
+              "b4d2",
+              "b1d2",
+              "a7a5",
+              "e1c1",
+              "e8e7",
+              "h1e1",
+              "a5a4",
+              "e1e3",
+              "a8a5",
+              "h2h3",
+              "b8d7"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 220
+            },
+            "wdl": [
+              995,
+              5,
+              0
+            ],
+            "pv": [
+              "b1c3",
+              "c7c6",
+              "c1g5",
+              "e7c7",
+              "g5f6",
+              "g7f6",
+              "a2a4",
+              "b8a6",
+              "c4a6",
+              "b7a6",
+              "b3c4",
+              "a8d8",
+              "e1g1",
+              "d8d4",
+              "c4a6",
+              "f8b4"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 15,
+        "fen": "rn2kb1r/ppp1qppp/5n2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R b KQkq - 5 8",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 258
+        },
+        "wdl": [
+          999,
+          1,
+          0
+        ],
+        "bestMove": "c7c6",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 258
+            },
+            "wdl": [
+              999,
+              1,
+              0
+            ],
+            "pv": [
+              "c7c6",
+              "c1g5",
+              "a7a6",
+              "a2a4",
+              "e7c7",
+              "g5f6",
+              "g7f6",
+              "e1g1",
+              "f8c5",
+              "c3e2",
+              "h8f8",
+              "e2g3",
+              "b8d7",
+              "g3f5"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 332
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "e7b4",
+              "c4f7",
+              "e8d8",
+              "c1g5",
+              "b4b3",
+              "e1c1",
+              "d8c8",
+              "f7b3",
+              "c7c6",
+              "f2f4",
+              "h7h6",
+              "g5h4",
+              "b8d7",
+              "h4f6",
+              "d7f6",
+              "f4e5"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 16,
+        "fen": "rn2kb1r/pp2qppp/2p2n2/4p3/2B1P3/1QN5/PPP2PPP/R1B1K2R w KQkq - 0 9",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 258
+        },
+        "wdl": [
+          999,
+          1,
+          0
+        ],
+        "bestMove": "c1g5",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 258
+            },
+            "wdl": [
+              999,
+              1,
+              0
+            ],
+            "pv": [
+              "c1g5",
+              "b8a6",
+              "g5f6",
+              "g7f6",
+              "c4a6",
+              "b7a6",
+              "b3c4",
+              "e7c5",
+              "c4a6",
+              "c5b6",
+              "a6c4",
+              "a8d8",
+              "a1d1",
+              "d8d1",
+              "c3d1",
+              "f8c5",
+              "b2b3",
+              "e8e7",
+              "e1g1",
+              "h8d8",
+              "c4e2",
+              "d8d4",
+              "e2f3"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 148
+            },
+            "wdl": [
+              897,
+              103,
+              0
+            ],
+            "pv": [
+              "a2a4",
+              "b8a6",
+              "c1e3",
+              "e7c7",
+              "c4a6",
+              "b7a6",
+              "e1c1",
+              "f6g4",
+              "b3c4",
+              "c7b7",
+              "e3c5",
+              "f8c5",
+              "c4c5",
+              "b7b6",
+              "c5d6",
+              "a8d8",
+              "d6a3",
+              "g4f2",
+              "d1d8",
+              "e8d8"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 17,
+        "fen": "rn2kb1r/pp2qppp/2p2n2/4p1B1/2B1P3/1QN5/PPP2PPP/R3K2R b KQkq - 1 9",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 271
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "b8a6",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 271
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "b8a6",
+              "c4a6",
+              "b7a6",
+              "g5f6",
+              "g7f6",
+              "e1g1",
+              "e7e6",
+              "b3a4",
+              "f8c5",
+              "c3e2",
+              "e8c8",
+              "a4a6",
+              "c8b8",
+              "a1d1"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 302
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "h7h5",
+              "e1c1",
+              "b8a6",
+              "c4a6",
+              "b7a6",
+              "g5f6",
+              "e7f6"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 18,
+        "fen": "rn2kb1r/p3qppp/2p2n2/1p2p1B1/2B1P3/1QN5/PPP2PPP/R3K2R w KQkq - 0 10",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 423
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "c3b5",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 423
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "c3b5",
+              "e7b4",
+              "b3b4",
+              "f8b4",
+              "c2c3",
+              "c6b5",
+              "c4b5",
+              "b8d7",
+              "c3b4",
+              "a8b8",
+              "b5d7",
+              "e8d7",
+              "g5f6",
+              "d7e6",
+              "f6g5",
+              "b8b4",
+              "a1c1",
+              "f7f6",
+              "g5e3"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 134
+            },
+            "wdl": [
+              821,
+              179,
+              0
+            ],
+            "pv": [
+              "g5f6",
+              "e7f6",
+              "c3b5",
+              "c6b5",
+              "c4b5",
+              "b8c6",
+              "b3d5",
+              "f8b4",
+              "c2c3",
+              "a8c8",
+              "c3b4",
+              "e8g8",
+              "b5c6",
+              "f8d8",
+              "c6d7",
+              "c8c7",
+              "d5b3"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 19,
+        "fen": "rn2kb1r/p3qppp/2p2n2/1N2p1B1/2B1P3/1Q6/PPP2PPP/R3K2R b KQkq - 0 10",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 410
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "e7b4",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 410
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "e7b4",
+              "b3b4",
+              "f8b4",
+              "c2c3",
+              "c6b5",
+              "c4b5",
+              "b8d7",
+              "c3b4",
+              "a8b8",
+              "b5d7",
+              "e8d7",
+              "g5f6",
+              "g7f6",
+              "e1c1",
+              "d7e6",
+              "a2a3",
+              "b8c8",
+              "c1b1",
+              "h7h5",
+              "g2g3",
+              "h5h4",
+              "d1c1",
+              "h4h3",
+              "h1d1",
+              "f6f5"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 541
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "a7a6",
+              "g5f6",
+              "g7f6",
+              "b5c3",
+              "e7b4",
+              "c4f7",
+              "e8d8",
+              "b3e6",
+              "b4e7",
+              "a1d1",
+              "d8c7",
+              "e6c4",
+              "e7b4",
+              "e1g1",
+              "b4c4",
+              "f7c4",
+              "b8d7"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 20,
+        "fen": "rn2kb1r/p3qppp/5n2/1p2p1B1/2B1P3/1Q6/PPP2PPP/R3K2R w KQkq - 0 11",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 637
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "c4b5",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 637
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "c4b5",
+              "e8d8",
+              "e1c1",
+              "d8c8",
+              "d1d3",
+              "e7c7",
+              "d3c3",
+              "f8c5",
+              "g5f6",
+              "g7f6",
+              "b3c4",
+              "c8b7",
+              "c4c5",
+              "c7c5",
+              "c3c5",
+              "b8a6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 115
+            },
+            "wdl": [
+              671,
+              329,
+              0
+            ],
+            "pv": [
+              "b3b5",
+              "e7d7",
+              "b5e5",
+              "f8e7",
+              "a1d1",
+              "b8c6",
+              "e5b5",
+              "d7c7",
+              "g5f4",
+              "c7a5",
+              "c2c3",
+              "a8c8",
+              "e4e5",
+              "f6h5"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 21,
+        "fen": "rn2kb1r/p3qppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/R3K2R b KQkq - 0 11",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 687
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "e8d8",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 687
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "e8d8",
+              "e1c1",
+              "d8c8",
+              "d1d3",
+              "e7b4",
+              "d3c3",
+              "c8b7",
+              "b3f7",
+              "b4e7",
+              "f7c4",
+              "a7a6",
+              "c4c8",
+              "b7b6",
+              "b5a4",
+              "b6a5",
+              "c3b3",
+              "a5a4",
+              "c8c4",
+              "a4a5"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 730
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "b8d7",
+              "e1c1",
+              "a8b8",
+              "g5f6",
+              "b8b5",
+              "b3b5",
+              "a7a6",
+              "f6e7",
+              "a6b5",
+              "e7f8",
+              "h8f8",
+              "d1d5",
+              "f7f5",
+              "e4f5",
+              "f8f5",
+              "h1d1",
+              "d7f6",
+              "d5b5",
+              "f5f2",
+              "b5e5",
+              "e8f7",
+              "e5b5"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 22,
+        "fen": "r3kb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/R3K2R w KQkq - 1 12",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 737
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "e1c1",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 737
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "e1c1",
+              "a8b8",
+              "g5f6",
+              "b8b5",
+              "b3b5",
+              "a7a6",
+              "b5b7",
+              "g7f6",
+              "d1d5",
+              "f8h6",
+              "c1b1",
+              "e8g8",
+              "d5d7",
+              "e7c5",
+              "f2f3",
+              "c5f2"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 360
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "g5f6",
+              "e7b4",
+              "b3b4",
+              "f8b4",
+              "c2c3",
+              "b4c3",
+              "b2c3",
+              "g7f6",
+              "e1c1",
+              "e8c8",
+              "d1d6",
+              "d7c5",
+              "d6c6",
+              "c8b7",
+              "c6f6",
+              "h8g8",
+              "f6f3"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 23,
+        "fen": "r3kb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR3R b kq - 2 12",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 724
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "a8b8",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 724
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "a8b8",
+              "g5f6",
+              "b8b5",
+              "b3b5",
+              "g7f6",
+              "d1d5",
+              "a7a6",
+              "b5b7",
+              "f8h6",
+              "c1b1",
+              "e8g8",
+              "d5d7",
+              "e7c5",
+              "f2f3",
+              "c5f2",
+              "h1d1",
+              "h6e3",
+              "b7a6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 765
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "e7c5",
+              "g5f6",
+              "f8d6",
+              "b5d7",
+              "e8d7",
+              "d1d5",
+              "h8b8",
+              "b3h3",
+              "d7e8",
+              "d5c5",
+              "d6c5",
+              "f6e5",
+              "c5f2",
+              "e5d6",
+              "b8d8",
+              "e4e5"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 24,
+        "fen": "3rkb1r/p2nqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR3R w k - 3 13",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 731
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "d1d7",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 731
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "d1d7",
+              "f6d7",
+              "g5e7",
+              "f8e7",
+              "b5d7",
+              "d8d7",
+              "b3b8",
+              "d7d8",
+              "b8b5",
+              "e8f8",
+              "b5e5",
+              "e7f6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 506
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "d1d5",
+              "h7h6",
+              "g5f6",
+              "e7f6",
+              "h1d1",
+              "f8e7",
+              "b5d7",
+              "e8f8",
+              "c1b1",
+              "g7g6",
+              "b3e3",
+              "f8g7",
+              "d1d3",
+              "f6f4",
+              "e3f4",
+              "e5f4"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 25,
+        "fen": "3rkb1r/p2Rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2K4R b k - 0 13",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 734
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "f6d7",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 734
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "f6d7",
+              "g5e7",
+              "f8e7",
+              "b5d7",
+              "d8d7",
+              "b3b8",
+              "d7d8",
+              "b8e5",
+              "e8g8",
+              "e5e7",
+              "f8e8",
+              "e7g5",
+              "a7a5",
+              "b2b3",
+              "d8c8",
+              "h1d1",
+              "e8e4",
+              "g5a5"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 789
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "d8d7",
+              "h1d1",
+              "e7d6",
+              "d1d6",
+              "f8d6",
+              "b3d3",
+              "e8e7",
+              "b5d7",
+              "e7d7",
+              "g5e3"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 26,
+        "fen": "4kb1r/p2rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2K4R w k - 0 14",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 764
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "h1d1",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 764
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "h1d1",
+              "e7d6",
+              "d1d6",
+              "f8d6",
+              "b3d3",
+              "e8e7",
+              "b5d7",
+              "e7d7",
+              "d3b5",
+              "d7e7",
+              "b5a6",
+              "h8b8",
+              "a6a7",
+              "e7f8",
+              "g5e3",
+              "f6e4"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 205
+            },
+            "wdl": [
+              995,
+              5,
+              0
+            ],
+            "pv": [
+              "g5f6",
+              "e7f6",
+              "h1d1",
+              "f8d6",
+              "b3h3",
+              "f6e7",
+              "c2c4",
+              "e8g8",
+              "h3d7",
+              "e7g5",
+              "c1b1",
+              "d6c5",
+              "g2g3",
+              "c5f2",
+              "d7d5",
+              "h7h6",
+              "c4c5",
+              "f2d4",
+              "b5a6"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 27,
+        "fen": "4kb1r/p2rqppp/5n2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 1 14",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 830
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "e7d6",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 830
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "e7d6",
+              "b5d7",
+              "f6d7",
+              "b3b7",
+              "f7f6",
+              "b7c8",
+              "e8f7",
+              "d1d6",
+              "f8d6",
+              "c8d7",
+              "d6e7",
+              "g5e3",
+              "a7a5",
+              "d7f5",
+              "h8d8"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 853
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "h7h6",
+              "b5d7",
+              "f6d7",
+              "g5e7",
+              "f8e7",
+              "b3b7",
+              "e8g8",
+              "d1d7",
+              "e7g5",
+              "c1b1",
+              "g8h7",
+              "a2a3"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 28,
+        "fen": "4kb1r/p2r1ppp/4qn2/1B2p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 2 15",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "cp",
+          "value": 1151
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "b5d7",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 1151
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "b5d7",
+              "e6d7",
+              "b3b8",
+              "e8e7",
+              "b8e5",
+              "e7d8",
+              "e5b8",
+              "d8e7",
+              "d1d7",
+              "e7d7",
+              "g5f4",
+              "h7h5",
+              "b8b5",
+              "d7e6"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 757
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "g5f6",
+              "g7f6",
+              "b5d7",
+              "e6d7",
+              "b3b8",
+              "e8e7",
+              "d1d7",
+              "e7d7",
+              "b8b7",
+              "d7e6",
+              "b7c8",
+              "e6e7",
+              "c8c5",
+              "e7e6",
+              "c5d5",
+              "e6e7"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 29,
+        "fen": "4kb1r/p2B1ppp/4qn2/4p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 0 15",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "cp",
+          "value": 1137
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "e6d7",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 1137
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "e6d7",
+              "b3b8",
+              "e8e7",
+              "b8e5",
+              "e7d8",
+              "e5b8",
+              "d8e7",
+              "d1d7",
+              "e7d7",
+              "g5f4",
+              "f6e4",
+              "b8b7",
+              "d7d8",
+              "b7e4",
+              "f7f6",
+              "a2a4",
+              "d8d7",
+              "e4d4",
+              "d7e8"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "mate",
+              "value": 4
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "e8e7",
+              "b3b4",
+              "e6d6",
+              "b4d6",
+              "e7d8",
+              "d6b8",
+              "d8e7",
+              "b8e8"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 30,
+        "fen": "4kb1r/p2n1ppp/4q3/4p1B1/4P3/1Q6/PPP2PPP/2KR4 w k - 0 16",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "mate",
+          "value": 2
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "b3b8",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "mate",
+              "value": 2
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "b3b8",
+              "d7b8",
+              "d1d8"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": 248
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "b3b7",
+              "f7f6",
+              "g5e3",
+              "a7a6",
+              "d1d3",
+              "g7g6",
+              "a2a4",
+              "h7h5",
+              "a4a5",
+              "h5h4"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 31,
+        "fen": "1Q2kb1r/p2n1ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 b k - 1 16",
+        "sideToMove": "b",
+        "evaluation": {
+          "type": "mate",
+          "value": 1
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "d7b8",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "mate",
+              "value": 1
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "d7b8",
+              "d1d8"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 32,
+        "fen": "1n2kb1r/p4ppp/4q3/4p1B1/4P3/8/PPP2PPP/2KR4 w k - 0 17",
+        "sideToMove": "w",
+        "evaluation": {
+          "type": "mate",
+          "value": 1
+        },
+        "wdl": [
+          1000,
+          0,
+          0
+        ],
+        "bestMove": "d1d8",
+        "lines": [
+          {
+            "multiPv": 1,
+            "depth": 16,
+            "score": {
+              "type": "mate",
+              "value": 1
+            },
+            "wdl": [
+              1000,
+              0,
+              0
+            ],
+            "pv": [
+              "d1d8"
+            ]
+          },
+          {
+            "multiPv": 2,
+            "depth": 16,
+            "score": {
+              "type": "cp",
+              "value": -1109
+            },
+            "wdl": [
+              0,
+              0,
+              1000
+            ],
+            "pv": [
+              "a2a3",
+              "f7f6",
+              "g5d2",
+              "e8f7",
+              "f2f3",
+              "f8e7",
+              "d2e3",
+              "e6a2",
+              "e3a7",
+              "a2a1",
+              "c1d2"
+            ]
+          }
+        ],
+        "depth": 16,
+        "source": "engine"
+      },
+      {
+        "ply": 33,
+        "fen": "1n1Rkb1r/p4ppp/4q3/4p1B1/4P3/8/PPP2PPP/2K5 b k - 1 17",
+        "sideToMove": "b",
+        "terminal": "checkmate",
+        "evaluation": {
+          "type": "mate",
+          "value": 0,
+          "winner": "w"
+        },
+        "lines": [],
+        "depth": 0,
+        "source": "rules"
+      }
+    ],
+    "settings": {
+      "engine": "Stockfish 19 Lite WASM",
+      "depth": 16,
+      "multiPv": 2
+    },
+    "durationMs": 15582
+  },
+  "review": {
+    "classificationVersion": "cls-v1",
+    "settings": {
+      "engine": "Stockfish 19 Lite WASM",
+      "depth": 16,
+      "multiPv": 2
+    },
+    "headers": {
+      "Event": "Paris",
+      "Site": "Paris FRA",
+      "Date": "1858.??.??",
+      "Round": "?",
+      "White": "Paul Morphy",
+      "Black": "Duke Karl / Count Isouard",
+      "Result": "1-0",
+      "ECO": "C41"
+    },
+    "result": "1-0",
+    "moves": [
+      {
+        "ply": 1,
+        "color": "w",
+        "san": "e4",
+        "uci": "e2e4",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.5239152574834706,
+        "epAfter": 0.5330902822991305,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "e2e4",
+        "secondBestEP": 0.5229967635676993,
+        "onlyMoveGap": 0.0009184939157712568,
+        "legalMoveCount": 20,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 1,
+        "phase": "opening",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 26
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 36
+        },
+        "bestMoveSan": "e4",
+        "bestLineSan": [
+          "e4",
+          "e5",
+          "Nf3",
+          "Nc6",
+          "d4",
+          "exd4",
+          "Nxd4",
+          "Nf6",
+          "Nxc6",
+          "dxc6"
+        ],
+        "playedLineSan": [
+          "e5",
+          "Nf3",
+          "Nc6",
+          "Bb5",
+          "a6",
+          "Ba4",
+          "Nf6",
+          "O-O",
+          "Nxe4",
+          "Re1"
+        ]
+      },
+      {
+        "ply": 2,
+        "color": "b",
+        "san": "e5",
+        "uci": "e7e5",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.46690971770086953,
+        "epAfter": 0.4742482461063747,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "e7e5",
+        "secondBestEP": 0.46324561670945996,
+        "onlyMoveGap": 0.003664100991409569,
+        "legalMoveCount": 20,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 1,
+        "phase": "opening",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 36
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 28
+        },
+        "bestMoveSan": "e5",
+        "bestLineSan": [
+          "e5",
+          "Nf3",
+          "Nc6",
+          "Bb5",
+          "a6",
+          "Ba4",
+          "Nf6",
+          "O-O",
+          "Nxe4",
+          "Re1"
+        ],
+        "playedLineSan": [
+          "Nf3",
+          "Nc6",
+          "d4",
+          "exd4",
+          "Nxd4",
+          "Nf6",
+          "Nxc6",
+          "bxc6",
+          "e5",
+          "Qe7"
+        ]
+      },
+      {
+        "ply": 3,
+        "color": "w",
+        "san": "Nf3",
+        "uci": "g1f3",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.5257517538936253,
+        "epAfter": 0.5257517538936253,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "g1f3",
+        "secondBestEP": 0.5009205189599892,
+        "onlyMoveGap": 0.024831234933636037,
+        "legalMoveCount": 29,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 2,
+        "phase": "opening",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 28
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 28
+        },
+        "bestMoveSan": "Nf3",
+        "bestLineSan": [
+          "Nf3",
+          "Nc6",
+          "d4",
+          "exd4",
+          "Nxd4",
+          "Nf6",
+          "Nxc6",
+          "bxc6",
+          "e5",
+          "Qe7"
+        ],
+        "playedLineSan": [
+          "Nc6",
+          "d4",
+          "exd4",
+          "Nxd4",
+          "Nf6",
+          "Nxc6",
+          "bxc6",
+          "Bd3",
+          "d5",
+          "e5"
+        ]
+      },
+      {
+        "ply": 4,
+        "color": "b",
+        "san": "d6",
+        "uci": "d7d6",
+        "classification": "good",
+        "baseClassification": "good",
+        "epBefore": 0.4742482461063747,
+        "epAfter": 0.4440831581551713,
+        "epLoss": 0.03016508795120343,
+        "isEngineBest": false,
+        "bestMove": "b8c6",
+        "secondBestEP": 0.4614150285897469,
+        "onlyMoveGap": 0.012833217516627804,
+        "legalMoveCount": 29,
+        "reasons": [],
+        "moveNumber": 2,
+        "phase": "opening",
+        "accuracy": 88.30104570825576,
+        "evalBefore": {
+          "type": "cp",
+          "value": 28
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 61
+        },
+        "bestMoveSan": "Nc6",
+        "bestLineSan": [
+          "Nc6",
+          "d4",
+          "exd4",
+          "Nxd4",
+          "Nf6",
+          "Nxc6",
+          "bxc6",
+          "Bd3",
+          "d5",
+          "e5"
+        ],
+        "playedLineSan": [
+          "d4",
+          "Nf6",
+          "dxe5",
+          "Nxe4",
+          "Bc4",
+          "dxe5",
+          "Qxd8+",
+          "Kxd8",
+          "Nxe5"
+        ]
+      },
+      {
+        "ply": 5,
+        "color": "w",
+        "san": "d4",
+        "uci": "d2d4",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.5559168418448287,
+        "epAfter": 0.5385849714102531,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "d2d4",
+        "secondBestEP": 0.5340066578563346,
+        "onlyMoveGap": 0.021910183988494092,
+        "legalMoveCount": 27,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 3,
+        "phase": "opening",
+        "accuracy": 93.50042145782893,
+        "evalBefore": {
+          "type": "cp",
+          "value": 61
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 42
+        },
+        "bestMoveSan": "d4",
+        "bestLineSan": [
+          "d4",
+          "Nf6",
+          "dxe5",
+          "Nxe4",
+          "Bc4",
+          "dxe5",
+          "Qxd8+",
+          "Kxd8",
+          "Nxe5"
+        ],
+        "playedLineSan": [
+          "Nf6",
+          "dxe5",
+          "Nxe4",
+          "Bc4",
+          "c6",
+          "exd6",
+          "Bxd6",
+          "O-O",
+          "O-O",
+          "Re1"
+        ]
+      },
+      {
+        "ply": 6,
+        "color": "b",
+        "san": "Bg4",
+        "uci": "c8g4",
+        "classification": "inaccuracy",
+        "baseClassification": "inaccuracy",
+        "epBefore": 0.4614150285897469,
+        "epAfter": 0.3930557601118819,
+        "epLoss": 0.068359268477865,
+        "isEngineBest": false,
+        "bestMove": "g8f6",
+        "secondBestEP": 0.4550164794045317,
+        "onlyMoveGap": 0.006398549185215208,
+        "legalMoveCount": 33,
+        "reasons": [],
+        "moveNumber": 3,
+        "phase": "opening",
+        "accuracy": 74.43962225426812,
+        "evalBefore": {
+          "type": "cp",
+          "value": 42
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 118
+        },
+        "bestMoveSan": "Nf6",
+        "bestLineSan": [
+          "Nf6",
+          "dxe5",
+          "Nxe4",
+          "Bc4",
+          "c6",
+          "exd6",
+          "Bxd6",
+          "O-O",
+          "O-O",
+          "Re1"
+        ],
+        "playedLineSan": [
+          "Be3",
+          "Nd7",
+          "Nc3",
+          "Be7",
+          "h3",
+          "Bxf3",
+          "Qxf3",
+          "Bf6",
+          "Bc4",
+          "Ne7"
+        ]
+      },
+      {
+        "ply": 7,
+        "color": "w",
+        "san": "dxe5",
+        "uci": "d4e5",
+        "classification": "excellent",
+        "baseClassification": "excellent",
+        "epBefore": 0.6069442398881181,
+        "epAfter": 0.5945811119487451,
+        "epLoss": 0.012363127939372998,
+        "isEngineBest": false,
+        "bestMove": "c1e3",
+        "secondBestEP": 0.589244688568345,
+        "onlyMoveGap": 0.017699551319773077,
+        "legalMoveCount": 35,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 4,
+        "phase": "opening",
+        "accuracy": 95.59283120541356,
+        "evalBefore": {
+          "type": "cp",
+          "value": 118
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 104
+        },
+        "bestMoveSan": "Be3",
+        "bestLineSan": [
+          "Be3",
+          "Nd7",
+          "Nc3",
+          "Be7",
+          "h3",
+          "Bxf3",
+          "Qxf3",
+          "Bf6",
+          "Bc4",
+          "Ne7"
+        ],
+        "playedLineSan": [
+          "Nc6",
+          "exd6",
+          "Bxd6",
+          "Bb5",
+          "Ne7",
+          "h3",
+          "Bh5",
+          "Nc3",
+          "a6",
+          "Be2"
+        ]
+      },
+      {
+        "ply": 8,
+        "color": "b",
+        "san": "Bxf3",
+        "uci": "g4f3",
+        "classification": "excellent",
+        "baseClassification": "excellent",
+        "epBefore": 0.4054188880512549,
+        "epAfter": 0.3886724751492474,
+        "epLoss": 0.016746412902007513,
+        "isEngineBest": false,
+        "bestMove": "b8c6",
+        "secondBestEP": 0.3877979496486411,
+        "onlyMoveGap": 0.017620938402613806,
+        "legalMoveCount": 36,
+        "reasons": [],
+        "moveNumber": 4,
+        "phase": "opening",
+        "accuracy": 93.7446197809628,
+        "evalBefore": {
+          "type": "cp",
+          "value": 104
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 123
+        },
+        "bestMoveSan": "Nc6",
+        "bestLineSan": [
+          "Nc6",
+          "exd6",
+          "Bxd6",
+          "Bb5",
+          "Ne7",
+          "h3",
+          "Bh5",
+          "Nc3",
+          "a6",
+          "Be2"
+        ],
+        "playedLineSan": [
+          "Qxf3",
+          "dxe5",
+          "Qb3",
+          "Nd7",
+          "Be3",
+          "Bc5",
+          "Bxc5",
+          "Nxc5",
+          "Qb5+",
+          "Nd7"
+        ]
+      },
+      {
+        "ply": 9,
+        "color": "w",
+        "san": "Qxf3",
+        "uci": "d1f3",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.6113275248507526,
+        "epAfter": 0.6515713880482262,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "d1f3",
+        "secondBestEP": 0.5820968656397246,
+        "onlyMoveGap": 0.029230659211027965,
+        "legalMoveCount": 35,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 5,
+        "phase": "opening",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 123
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 170
+        },
+        "bestMoveSan": "Qxf3",
+        "bestLineSan": [
+          "Qxf3",
+          "dxe5",
+          "Qb3",
+          "Nd7",
+          "Be3",
+          "Bc5",
+          "Bxc5",
+          "Nxc5",
+          "Qb5+",
+          "Nd7"
+        ],
+        "playedLineSan": [
+          "dxe5",
+          "Qb3",
+          "Nd7",
+          "Be3",
+          "Bc5",
+          "Bxc5",
+          "Nxc5",
+          "Qb5+",
+          "Nd7",
+          "Qxb7"
+        ]
+      },
+      {
+        "ply": 10,
+        "color": "b",
+        "san": "dxe5",
+        "uci": "d6e5",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.34842861195177377,
+        "epAfter": 0.36192003565750486,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "d6e5",
+        "secondBestEP": 0.34592504417194525,
+        "onlyMoveGap": 0.0025035677798285194,
+        "legalMoveCount": 29,
+        "reasons": [],
+        "moveNumber": 5,
+        "phase": "opening",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 170
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 154
+        },
+        "bestMoveSan": "dxe5",
+        "bestLineSan": [
+          "dxe5",
+          "Qb3",
+          "Nd7",
+          "Be3",
+          "Bc5",
+          "Bxc5",
+          "Nxc5",
+          "Qb5+",
+          "Nd7",
+          "Qxb7"
+        ],
+        "playedLineSan": [
+          "Qb3",
+          "Nd7",
+          "Be3",
+          "Bc5",
+          "Bxc5",
+          "Nxc5",
+          "Qb5+",
+          "Nd7",
+          "Qxb7",
+          "Rb8"
+        ]
+      },
+      {
+        "ply": 11,
+        "color": "w",
+        "san": "Bc4",
+        "uci": "f1c4",
+        "classification": "excellent",
+        "baseClassification": "excellent",
+        "epBefore": 0.6380799643424951,
+        "epAfter": 0.6252304785769166,
+        "epLoss": 0.012849485765578539,
+        "isEngineBest": false,
+        "bestMove": "f3b3",
+        "secondBestEP": 0.6191718321143753,
+        "onlyMoveGap": 0.018908132228119823,
+        "legalMoveCount": 40,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 6,
+        "phase": "opening",
+        "accuracy": 95.38601427920385,
+        "evalBefore": {
+          "type": "cp",
+          "value": 154
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 139
+        },
+        "bestMoveSan": "Qb3",
+        "bestLineSan": [
+          "Qb3",
+          "Nd7",
+          "Be3",
+          "Bc5",
+          "Bxc5",
+          "Nxc5",
+          "Qb5+",
+          "Nd7",
+          "Qxb7",
+          "Rb8"
+        ],
+        "playedLineSan": [
+          "Qf6",
+          "Qb3",
+          "Nd7",
+          "Qxb7",
+          "Rb8",
+          "Qa6",
+          "Qxa6",
+          "Bxa6",
+          "Nc5",
+          "Bd3"
+        ]
+      },
+      {
+        "ply": 12,
+        "color": "b",
+        "san": "Nf6",
+        "uci": "g8f6",
+        "classification": "mistake",
+        "baseClassification": "mistake",
+        "epBefore": 0.3747695214230834,
+        "epAfter": 0.2671971513914837,
+        "epLoss": 0.1075723700315997,
+        "isEngineBest": false,
+        "bestMove": "d8f6",
+        "secondBestEP": 0.3747695214230834,
+        "onlyMoveGap": 0,
+        "legalMoveCount": 37,
+        "reasons": [],
+        "moveNumber": 6,
+        "phase": "opening",
+        "accuracy": 62.41486059197994,
+        "evalBefore": {
+          "type": "cp",
+          "value": 139
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 274
+        },
+        "bestMoveSan": "Qf6",
+        "bestLineSan": [
+          "Qf6",
+          "Qb3",
+          "Nd7",
+          "Qxb7",
+          "Rb8",
+          "Qa6",
+          "Qxa6",
+          "Bxa6",
+          "Nc5",
+          "Bd3"
+        ],
+        "playedLineSan": [
+          "Qb3",
+          "Bc5",
+          "Bxf7+",
+          "Kf8",
+          "Bd5",
+          "c6",
+          "Bc4",
+          "Nxe4",
+          "Nd2",
+          "Nd6"
+        ]
+      },
+      {
+        "ply": 13,
+        "color": "w",
+        "san": "Qb3",
+        "uci": "f3b3",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.7328028486085163,
+        "epAfter": 0.7299091321665175,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "f3b3",
+        "secondBestEP": 0.5998952814867482,
+        "onlyMoveGap": 0.1329075671217681,
+        "legalMoveCount": 45,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 7,
+        "phase": "opening",
+        "accuracy": 99.70809344674431,
+        "evalBefore": {
+          "type": "cp",
+          "value": 274
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 270
+        },
+        "bestMoveSan": "Qb3",
+        "bestLineSan": [
+          "Qb3",
+          "Bc5",
+          "Bxf7+",
+          "Kf8",
+          "Bd5",
+          "c6",
+          "Bc4",
+          "Nxe4",
+          "Nd2",
+          "Nd6"
+        ],
+        "playedLineSan": [
+          "Bc5",
+          "Bxf7+",
+          "Ke7",
+          "Bd5",
+          "c6",
+          "Bc4",
+          "b5",
+          "Be2",
+          "Qg8",
+          "Qh3"
+        ]
+      },
+      {
+        "ply": 14,
+        "color": "b",
+        "san": "Qe7",
+        "uci": "d8e7",
+        "classification": "good",
+        "baseClassification": "good",
+        "epBefore": 0.27009086783348246,
+        "epAfter": 0.24956344857367785,
+        "epLoss": 0.020527419259804613,
+        "isEngineBest": false,
+        "bestMove": "f8c5",
+        "secondBestEP": 0.2407066986076838,
+        "onlyMoveGap": 0.029384169225798673,
+        "legalMoveCount": 36,
+        "reasons": [],
+        "moveNumber": 7,
+        "phase": "opening",
+        "accuracy": 92.1784532979715,
+        "evalBefore": {
+          "type": "cp",
+          "value": 270
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 299
+        },
+        "bestMoveSan": "Bc5",
+        "bestLineSan": [
+          "Bc5",
+          "Bxf7+",
+          "Ke7",
+          "Bd5",
+          "c6",
+          "Bc4",
+          "b5",
+          "Be2",
+          "Qg8",
+          "Qh3"
+        ],
+        "playedLineSan": [
+          "Qxb7",
+          "Qb4+",
+          "Qxb4",
+          "Bxb4+",
+          "Bd2",
+          "Bxd2+",
+          "Nxd2",
+          "a5",
+          "O-O-O",
+          "Ke7"
+        ]
+      },
+      {
+        "ply": 15,
+        "color": "w",
+        "san": "Nc3",
+        "uci": "b1c3",
+        "classification": "good",
+        "baseClassification": "good",
+        "epBefore": 0.7504365514263222,
+        "epAfter": 0.7211104801138942,
+        "epLoss": 0.029326071312427926,
+        "isEngineBest": false,
+        "bestMove": "b3b7",
+        "secondBestEP": 0.6921217783768152,
+        "onlyMoveGap": 0.05831477304950694,
+        "legalMoveCount": 44,
+        "reasons": [],
+        "moveNumber": 8,
+        "phase": "opening",
+        "accuracy": 88.63216832850435,
+        "evalBefore": {
+          "type": "cp",
+          "value": 299
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 258
+        },
+        "bestMoveSan": "Qxb7",
+        "bestLineSan": [
+          "Qxb7",
+          "Qb4+",
+          "Qxb4",
+          "Bxb4+",
+          "Bd2",
+          "Bxd2+",
+          "Nxd2",
+          "a5",
+          "O-O-O",
+          "Ke7"
+        ],
+        "playedLineSan": [
+          "c6",
+          "Bg5",
+          "a6",
+          "a4",
+          "Qc7",
+          "Bxf6",
+          "gxf6",
+          "O-O",
+          "Bc5",
+          "Ne2"
+        ]
+      },
+      {
+        "ply": 16,
+        "color": "b",
+        "san": "c6",
+        "uci": "c7c6",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.2788895198861058,
+        "epAfter": 0.2788895198861058,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "c7c6",
+        "secondBestEP": 0.22750548507602664,
+        "onlyMoveGap": 0.05138403481007914,
+        "legalMoveCount": 29,
+        "reasons": [],
+        "moveNumber": 8,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 258
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 258
+        },
+        "bestMoveSan": "c6",
+        "bestLineSan": [
+          "c6",
+          "Bg5",
+          "a6",
+          "a4",
+          "Qc7",
+          "Bxf6",
+          "gxf6",
+          "O-O",
+          "Bc5",
+          "Ne2"
+        ],
+        "playedLineSan": [
+          "Bg5",
+          "Na6",
+          "Bxf6",
+          "gxf6",
+          "Bxa6",
+          "bxa6",
+          "Qc4",
+          "Qc5",
+          "Qxa6",
+          "Qb6"
+        ]
+      },
+      {
+        "ply": 17,
+        "color": "w",
+        "san": "Bg5",
+        "uci": "c1g5",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.7211104801138942,
+        "epAfter": 0.7306344092139007,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "c1g5",
+        "secondBestEP": 0.6329626589047256,
+        "onlyMoveGap": 0.08814782120916864,
+        "legalMoveCount": 41,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 9,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 258
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 271
+        },
+        "bestMoveSan": "Bg5",
+        "bestLineSan": [
+          "Bg5",
+          "Na6",
+          "Bxf6",
+          "gxf6",
+          "Bxa6",
+          "bxa6",
+          "Qc4",
+          "Qc5",
+          "Qxa6",
+          "Qb6"
+        ],
+        "playedLineSan": [
+          "Na6",
+          "Bxa6",
+          "bxa6",
+          "Bxf6",
+          "gxf6",
+          "O-O",
+          "Qe6",
+          "Qa4",
+          "Bc5",
+          "Ne2"
+        ]
+      },
+      {
+        "ply": 18,
+        "color": "b",
+        "san": "b5",
+        "uci": "b7b5",
+        "classification": "inaccuracy",
+        "baseClassification": "inaccuracy",
+        "epBefore": 0.26936559078609934,
+        "epAfter": 0.17400282193912264,
+        "epLoss": 0.0953627688469767,
+        "isEngineBest": false,
+        "bestMove": "b8a6",
+        "secondBestEP": 0.2475004199080585,
+        "onlyMoveGap": 0.02186517087804085,
+        "legalMoveCount": 27,
+        "reasons": [],
+        "moveNumber": 9,
+        "phase": "middlegame",
+        "accuracy": 65.94130716344067,
+        "evalBefore": {
+          "type": "cp",
+          "value": 271
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 423
+        },
+        "bestMoveSan": "Na6",
+        "bestLineSan": [
+          "Na6",
+          "Bxa6",
+          "bxa6",
+          "Bxf6",
+          "gxf6",
+          "O-O",
+          "Qe6",
+          "Qa4",
+          "Bc5",
+          "Ne2"
+        ],
+        "playedLineSan": [
+          "Nxb5",
+          "Qb4+",
+          "Qxb4",
+          "Bxb4+",
+          "c3",
+          "cxb5",
+          "Bxb5+",
+          "Nbd7",
+          "cxb4",
+          "Rb8"
+        ]
+      },
+      {
+        "ply": 19,
+        "color": "w",
+        "san": "Nxb5",
+        "uci": "c3b5",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.8259971780608774,
+        "epAfter": 0.8190097461263064,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "c3b5",
+        "secondBestEP": 0.6209067564512851,
+        "onlyMoveGap": 0.20509042160959223,
+        "legalMoveCount": 43,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 10,
+        "phase": "middlegame",
+        "accuracy": 97.90818609038978,
+        "evalBefore": {
+          "type": "cp",
+          "value": 423
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 410
+        },
+        "bestMoveSan": "Nxb5",
+        "bestLineSan": [
+          "Nxb5",
+          "Qb4+",
+          "Qxb4",
+          "Bxb4+",
+          "c3",
+          "cxb5",
+          "Bxb5+",
+          "Nbd7",
+          "cxb4",
+          "Rb8"
+        ],
+        "playedLineSan": [
+          "Qb4+",
+          "Qxb4",
+          "Bxb4+",
+          "c3",
+          "cxb5",
+          "Bxb5+",
+          "Nbd7",
+          "cxb4",
+          "Rb8",
+          "Bxd7+"
+        ]
+      },
+      {
+        "ply": 20,
+        "color": "b",
+        "san": "cxb5",
+        "uci": "c6b5",
+        "classification": "inaccuracy",
+        "baseClassification": "inaccuracy",
+        "epBefore": 0.1809902538736936,
+        "epAfter": 0.08742532159410732,
+        "epLoss": 0.09356493227958629,
+        "isEngineBest": false,
+        "bestMove": "e7b4",
+        "secondBestEP": 0.1200448750679678,
+        "onlyMoveGap": 0.060945378805725814,
+        "legalMoveCount": 27,
+        "reasons": [],
+        "moveNumber": 10,
+        "phase": "middlegame",
+        "accuracy": 66.47658680210989,
+        "evalBefore": {
+          "type": "cp",
+          "value": 410
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 637
+        },
+        "bestMoveSan": "Qb4+",
+        "bestLineSan": [
+          "Qb4+",
+          "Qxb4",
+          "Bxb4+",
+          "c3",
+          "cxb5",
+          "Bxb5+",
+          "Nbd7",
+          "cxb4",
+          "Rb8",
+          "Bxd7+"
+        ],
+        "playedLineSan": [
+          "Bxb5+",
+          "Kd8",
+          "O-O-O+",
+          "Kc8",
+          "Rd3",
+          "Qc7",
+          "Rc3",
+          "Bc5",
+          "Bxf6",
+          "gxf6"
+        ]
+      },
+      {
+        "ply": 21,
+        "color": "w",
+        "san": "Bxb5+",
+        "uci": "c4b5",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.9125746784058927,
+        "epAfter": 0.9261902588592948,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "c4b5",
+        "secondBestEP": 0.6043059266170111,
+        "onlyMoveGap": 0.3082687517888816,
+        "legalMoveCount": 44,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 11,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 637
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 687
+        },
+        "bestMoveSan": "Bxb5+",
+        "bestLineSan": [
+          "Bxb5+",
+          "Kd8",
+          "O-O-O+",
+          "Kc8",
+          "Rd3",
+          "Qc7",
+          "Rc3",
+          "Bc5",
+          "Bxf6",
+          "gxf6"
+        ],
+        "playedLineSan": [
+          "Kd8",
+          "O-O-O+",
+          "Kc8",
+          "Rd3",
+          "Qb4",
+          "Rc3+",
+          "Kb7",
+          "Qxf7+",
+          "Qe7",
+          "Qc4"
+        ]
+      },
+      {
+        "ply": 22,
+        "color": "b",
+        "san": "Nbd7",
+        "uci": "b8d7",
+        "classification": "excellent",
+        "baseClassification": "excellent",
+        "epBefore": 0.07380974114070515,
+        "epAfter": 0.06217018468833668,
+        "epLoss": 0.011639556452368471,
+        "isEngineBest": false,
+        "bestMove": "e8d8",
+        "secondBestEP": 0.06369003899095482,
+        "onlyMoveGap": 0.010119702149750331,
+        "legalMoveCount": 5,
+        "reasons": [],
+        "moveNumber": 11,
+        "phase": "middlegame",
+        "accuracy": 95.90133162676058,
+        "evalBefore": {
+          "type": "cp",
+          "value": 687
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 737
+        },
+        "bestMoveSan": "Kd8",
+        "bestLineSan": [
+          "Kd8",
+          "O-O-O+",
+          "Kc8",
+          "Rd3",
+          "Qb4",
+          "Rc3+",
+          "Kb7",
+          "Qxf7+",
+          "Qe7",
+          "Qc4"
+        ],
+        "playedLineSan": [
+          "O-O-O",
+          "Rb8",
+          "Bxf6",
+          "Rxb5",
+          "Qxb5",
+          "a6",
+          "Qb7",
+          "gxf6",
+          "Rd5",
+          "Bh6+"
+        ]
+      },
+      {
+        "ply": 23,
+        "color": "w",
+        "san": "O-O-O",
+        "uci": "e1c1",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.9378298153116633,
+        "epAfter": 0.9349797383605839,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "e1c1",
+        "secondBestEP": 0.7901034009176923,
+        "onlyMoveGap": 0.14772641439397105,
+        "legalMoveCount": 49,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 12,
+        "phase": "middlegame",
+        "accuracy": 99.72745403259013,
+        "evalBefore": {
+          "type": "cp",
+          "value": 737
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 724
+        },
+        "bestMoveSan": "O-O-O",
+        "bestLineSan": [
+          "O-O-O",
+          "Rb8",
+          "Bxf6",
+          "Rxb5",
+          "Qxb5",
+          "a6",
+          "Qb7",
+          "gxf6",
+          "Rd5",
+          "Bh6+"
+        ],
+        "playedLineSan": [
+          "Rb8",
+          "Bxf6",
+          "Rxb5",
+          "Qxb5",
+          "gxf6",
+          "Rd5",
+          "a6",
+          "Qb7",
+          "Bh6+",
+          "Kb1"
+        ]
+      },
+      {
+        "ply": 24,
+        "color": "b",
+        "san": "Rd8",
+        "uci": "a8d8",
+        "classification": "excellent",
+        "baseClassification": "excellent",
+        "epBefore": 0.0650202616394161,
+        "epAfter": 0.06347081567518342,
+        "epLoss": 0.0015494459642326763,
+        "isEngineBest": false,
+        "bestMove": "a8b8",
+        "secondBestEP": 0.05642352684428009,
+        "onlyMoveGap": 0.008596734795136007,
+        "legalMoveCount": 22,
+        "reasons": [],
+        "moveNumber": 12,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 724
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 731
+        },
+        "bestMoveSan": "Rb8",
+        "bestLineSan": [
+          "Rb8",
+          "Bxf6",
+          "Rxb5",
+          "Qxb5",
+          "gxf6",
+          "Rd5",
+          "a6",
+          "Qb7",
+          "Bh6+",
+          "Kb1"
+        ],
+        "playedLineSan": [
+          "Rxd7",
+          "Nxd7",
+          "Bxe7",
+          "Bxe7",
+          "Bxd7+",
+          "Rxd7",
+          "Qb8+",
+          "Rd8",
+          "Qb5+",
+          "Kf8"
+        ]
+      },
+      {
+        "ply": 25,
+        "color": "w",
+        "san": "Rxd7",
+        "uci": "d1d7",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.9365291843248166,
+        "epAfter": 0.9371826403057347,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "d1d7",
+        "secondBestEP": 0.8656616464722748,
+        "onlyMoveGap": 0.07086753785254174,
+        "legalMoveCount": 51,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 13,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 731
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 734
+        },
+        "bestMoveSan": "Rxd7",
+        "bestLineSan": [
+          "Rxd7",
+          "Nxd7",
+          "Bxe7",
+          "Bxe7",
+          "Bxd7+",
+          "Rxd7",
+          "Qb8+",
+          "Rd8",
+          "Qb5+",
+          "Kf8"
+        ],
+        "playedLineSan": [
+          "Nxd7",
+          "Bxe7",
+          "Bxe7",
+          "Bxd7+",
+          "Rxd7",
+          "Qb8+",
+          "Rd8",
+          "Qxe5",
+          "O-O",
+          "Qxe7"
+        ]
+      },
+      {
+        "ply": 26,
+        "color": "b",
+        "san": "Rxd7",
+        "uci": "d8d7",
+        "classification": "excellent",
+        "baseClassification": "excellent",
+        "epBefore": 0.06281735969426527,
+        "epAfter": 0.05661988094133508,
+        "epLoss": 0.006197478752930197,
+        "isEngineBest": false,
+        "bestMove": "f6d7",
+        "secondBestEP": 0.0518990194116169,
+        "onlyMoveGap": 0.010918340282648376,
+        "legalMoveCount": 22,
+        "reasons": [],
+        "moveNumber": 13,
+        "phase": "middlegame",
+        "accuracy": 98.25301561392351,
+        "evalBefore": {
+          "type": "cp",
+          "value": 734
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 764
+        },
+        "bestMoveSan": "Nxd7",
+        "bestLineSan": [
+          "Nxd7",
+          "Bxe7",
+          "Bxe7",
+          "Bxd7+",
+          "Rxd7",
+          "Qb8+",
+          "Rd8",
+          "Qxe5",
+          "O-O",
+          "Qxe7"
+        ],
+        "playedLineSan": [
+          "Rd1",
+          "Qd6",
+          "Rxd6",
+          "Bxd6",
+          "Qd3",
+          "Ke7",
+          "Bxd7",
+          "Kxd7",
+          "Qb5+",
+          "Ke7"
+        ]
+      },
+      {
+        "ply": 27,
+        "color": "w",
+        "san": "Rd1",
+        "uci": "h1d1",
+        "classification": "great",
+        "baseClassification": "best",
+        "epBefore": 0.9433801190586649,
+        "epAfter": 0.9550462849834119,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "h1d1",
+        "secondBestEP": 0.6802294368681915,
+        "onlyMoveGap": 0.26315068219047344,
+        "legalMoveCount": 42,
+        "reasons": [
+          "only-move"
+        ],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 14,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 764
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 830
+        },
+        "bestMoveSan": "Rd1",
+        "bestLineSan": [
+          "Rd1",
+          "Qd6",
+          "Rxd6",
+          "Bxd6",
+          "Qd3",
+          "Ke7",
+          "Bxd7",
+          "Kxd7",
+          "Qb5+",
+          "Ke7"
+        ],
+        "playedLineSan": [
+          "Qd6",
+          "Bxd7+",
+          "Nxd7",
+          "Qb7",
+          "f6",
+          "Qc8+",
+          "Kf7",
+          "Rxd6",
+          "Bxd6",
+          "Qxd7+"
+        ]
+      },
+      {
+        "ply": 28,
+        "color": "b",
+        "san": "Qe6",
+        "uci": "e7e6",
+        "classification": "good",
+        "baseClassification": "good",
+        "epBefore": 0.04495371501658807,
+        "epAfter": 0.024552563658567728,
+        "epLoss": 0.020401151358020342,
+        "isEngineBest": false,
+        "bestMove": "e7d6",
+        "secondBestEP": 0.04145475236979179,
+        "onlyMoveGap": 0.0034989626467962776,
+        "legalMoveCount": 18,
+        "reasons": [],
+        "moveNumber": 14,
+        "phase": "middlegame",
+        "accuracy": 92.23034080995993,
+        "evalBefore": {
+          "type": "cp",
+          "value": 830
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 1151
+        },
+        "bestMoveSan": "Qd6",
+        "bestLineSan": [
+          "Qd6",
+          "Bxd7+",
+          "Nxd7",
+          "Qb7",
+          "f6",
+          "Qc8+",
+          "Kf7",
+          "Rxd6",
+          "Bxd6",
+          "Qxd7+"
+        ],
+        "playedLineSan": [
+          "Bxd7+",
+          "Qxd7",
+          "Qb8+",
+          "Ke7",
+          "Qxe5+",
+          "Kd8",
+          "Qb8+",
+          "Ke7",
+          "Rxd7+",
+          "Kxd7"
+        ]
+      },
+      {
+        "ply": 29,
+        "color": "w",
+        "san": "Bxd7+",
+        "uci": "b5d7",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0.9754474363414323,
+        "epAfter": 0.9754474363414323,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "b5d7",
+        "secondBestEP": 0.9419875579104375,
+        "onlyMoveGap": 0.03345987843099474,
+        "legalMoveCount": 47,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 15,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "cp",
+          "value": 1151
+        },
+        "evalAfter": {
+          "type": "cp",
+          "value": 1137
+        },
+        "bestMoveSan": "Bxd7+",
+        "bestLineSan": [
+          "Bxd7+",
+          "Qxd7",
+          "Qb8+",
+          "Ke7",
+          "Qxe5+",
+          "Kd8",
+          "Qb8+",
+          "Ke7",
+          "Rxd7+",
+          "Kxd7"
+        ],
+        "playedLineSan": [
+          "Qxd7",
+          "Qb8+",
+          "Ke7",
+          "Qxe5+",
+          "Kd8",
+          "Qb8+",
+          "Ke7",
+          "Rxd7+",
+          "Kxd7",
+          "Bf4"
+        ]
+      },
+      {
+        "ply": 30,
+        "color": "b",
+        "san": "Nxd7",
+        "uci": "f6d7",
+        "classification": "good",
+        "baseClassification": "good",
+        "epBefore": 0.024552563658567728,
+        "epAfter": 0,
+        "epLoss": 0.024552563658567728,
+        "isEngineBest": false,
+        "bestMove": "e6d7",
+        "secondBestEP": 0,
+        "onlyMoveGap": 0.024552563658567728,
+        "legalMoveCount": 4,
+        "reasons": [],
+        "moveNumber": 15,
+        "phase": "middlegame",
+        "accuracy": 90.53925484147621,
+        "evalBefore": {
+          "type": "cp",
+          "value": 1137
+        },
+        "evalAfter": {
+          "type": "mate",
+          "value": 2
+        },
+        "bestMoveSan": "Qxd7",
+        "bestLineSan": [
+          "Qxd7",
+          "Qb8+",
+          "Ke7",
+          "Qxe5+",
+          "Kd8",
+          "Qb8+",
+          "Ke7",
+          "Rxd7+",
+          "Kxd7",
+          "Bf4"
+        ],
+        "playedLineSan": [
+          "Qb8+",
+          "Nxb8",
+          "Rd8#"
+        ]
+      },
+      {
+        "ply": 31,
+        "color": "w",
+        "san": "Qb8+",
+        "uci": "b3b8",
+        "classification": "brilliant",
+        "baseClassification": "best",
+        "epBefore": 1,
+        "epAfter": 1,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "b3b8",
+        "secondBestEP": 0.7136455108934885,
+        "onlyMoveGap": 0.2863544891065115,
+        "legalMoveCount": 46,
+        "reasons": [
+          "sacrifice:pv"
+        ],
+        "sacrifice": {
+          "isSacrifice": true,
+          "kind": "pv",
+          "value": 9
+        },
+        "moveNumber": 16,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "mate",
+          "value": 2
+        },
+        "evalAfter": {
+          "type": "mate",
+          "value": 1
+        },
+        "bestMoveSan": "Qb8+",
+        "bestLineSan": [
+          "Qb8+",
+          "Nxb8",
+          "Rd8#"
+        ],
+        "playedLineSan": [
+          "Nxb8",
+          "Rd8#"
+        ]
+      },
+      {
+        "ply": 32,
+        "color": "b",
+        "san": "Nxb8",
+        "uci": "d7b8",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 0,
+        "epAfter": 0,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "d7b8",
+        "legalMoveCount": 1,
+        "reasons": [],
+        "moveNumber": 16,
+        "phase": "middlegame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "mate",
+          "value": 1
+        },
+        "evalAfter": {
+          "type": "mate",
+          "value": 1
+        },
+        "bestMoveSan": "Nxb8",
+        "bestLineSan": [
+          "Nxb8",
+          "Rd8#"
+        ],
+        "playedLineSan": [
+          "Rd8#"
+        ]
+      },
+      {
+        "ply": 33,
+        "color": "w",
+        "san": "Rd8#",
+        "uci": "d1d8",
+        "classification": "best",
+        "baseClassification": "best",
+        "epBefore": 1,
+        "epAfter": 1,
+        "epLoss": 0,
+        "isEngineBest": true,
+        "bestMove": "d1d8",
+        "secondBestEP": 0.02455256365856777,
+        "onlyMoveGap": 0.9754474363414323,
+        "legalMoveCount": 33,
+        "reasons": [],
+        "sacrifice": {
+          "isSacrifice": false,
+          "value": 0
+        },
+        "moveNumber": 17,
+        "phase": "endgame",
+        "accuracy": 100,
+        "evalBefore": {
+          "type": "mate",
+          "value": 1
+        },
+        "evalAfter": {
+          "type": "mate",
+          "value": 0,
+          "winner": "w"
+        },
+        "bestMoveSan": "Rd8#",
+        "bestLineSan": [
+          "Rd8#"
+        ],
+        "playedLineSan": []
+      }
+    ],
+    "players": {
+      "w": {
+        "moveCount": 17,
+        "accuracy": 98.19950289445737,
+        "counts": {
+          "brilliant": 1,
+          "great": 1,
+          "best": 12,
+          "excellent": 2,
+          "good": 1,
+          "inaccuracy": 0,
+          "mistake": 0,
+          "miss": 0,
+          "blunder": 0
+        },
+        "phases": {
+          "opening": {
+            "moveCount": 8,
+            "accuracy": 96.82805044491687,
+            "counts": {
+              "brilliant": 0,
+              "great": 0,
+              "best": 5,
+              "excellent": 2,
+              "good": 1,
+              "inaccuracy": 0,
+              "mistake": 0,
+              "miss": 0,
+              "blunder": 0
+            }
+          },
+          "middlegame": {
+            "moveCount": 8,
+            "accuracy": 99.50763051608253,
+            "counts": {
+              "brilliant": 1,
+              "great": 1,
+              "best": 6,
+              "excellent": 0,
+              "good": 0,
+              "inaccuracy": 0,
+              "mistake": 0,
+              "miss": 0,
+              "blunder": 0
+            }
+          },
+          "endgame": {
+            "moveCount": 1,
+            "accuracy": 100,
+            "counts": {
+              "brilliant": 0,
+              "great": 0,
+              "best": 1,
+              "excellent": 0,
+              "good": 0,
+              "inaccuracy": 0,
+              "mistake": 0,
+              "miss": 0,
+              "blunder": 0
+            }
+          }
+        },
+        "name": "Paul Morphy",
+        "rating": {
+          "value": 2800,
+          "calibrated": false
+        }
+      },
+      "b": {
+        "moveCount": 16,
+        "accuracy": 82.41394360364694,
+        "counts": {
+          "brilliant": 0,
+          "great": 0,
+          "best": 4,
+          "excellent": 4,
+          "good": 4,
+          "inaccuracy": 3,
+          "mistake": 1,
+          "miss": 0,
+          "blunder": 0
+        },
+        "phases": {
+          "opening": {
+            "moveCount": 7,
+            "accuracy": 81.58260639110537,
+            "counts": {
+              "brilliant": 0,
+              "great": 0,
+              "best": 2,
+              "excellent": 1,
+              "good": 2,
+              "inaccuracy": 1,
+              "mistake": 1,
+              "miss": 0,
+              "blunder": 0
+            }
+          },
+          "middlegame": {
+            "moveCount": 9,
+            "accuracy": 83.08449182212084,
+            "counts": {
+              "brilliant": 0,
+              "great": 0,
+              "best": 2,
+              "excellent": 3,
+              "good": 2,
+              "inaccuracy": 2,
+              "mistake": 0,
+              "miss": 0,
+              "blunder": 0
+            }
+          },
+          "endgame": {
+            "moveCount": 0,
+            "accuracy": null,
+            "counts": {
+              "brilliant": 0,
+              "great": 0,
+              "best": 0,
+              "excellent": 0,
+              "good": 0,
+              "inaccuracy": 0,
+              "mistake": 0,
+              "miss": 0,
+              "blunder": 0
+            }
+          }
+        },
+        "name": "Duke Karl / Count Isouard",
+        "rating": {
+          "value": 1800,
+          "calibrated": false
+        }
+      }
+    }
+  }
+}

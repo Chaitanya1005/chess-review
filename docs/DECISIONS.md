@@ -113,3 +113,28 @@ These three games are not a benchmark: there is no Chess.com reference data for 
 ### D-020 · 2026-11-10 · Accepted — `tsx` (dev only) for Node scripts
 
 `scripts/analyze-pgn.ts` imports the same TypeScript modules as the app (extensionless imports). `tsx` runs them without a build step. MIT, dev dependency only; it is not shipped.
+
+### D-021 · 2026-11-11 · Needs validation (Phase 4) — UI analysis presets; the UI defaults to depth 16
+
+The homepage offers Fast (depth 12), **Standard (depth 16, default)** and Deep (depth 18), all MultiPV 2 (`src/lib/review/presets.ts`). The library default `DEFAULT_DEPTH = 14` (D-008) is unchanged, so the CLI and tests behave as before.
+
+- Why: depth 14 misses sacrificial mates that decide Brilliant/Great/Miss (D-017). Depth 16 still meets NFR-4 on this Mac: Opera Game (34 positions) ≈ 16 s, Kasparov–Topalov (88 positions) 29.9 s in the browser Worker. Fast exists for slow phones (MOB-5); the review shows the depth used (NFR-10).
+- Validate: mobile timings; whether Standard should drop to 14 on low-end devices.
+
+### D-022 · 2026-11-11 · Accepted — D-014 validated: Chessground board, custom SVG graph
+
+`@lichess-org/chessground@10.5.0` works as a view-only board in a client component (created in `useEffect`, reconfigured with `set()`, `redrawAll()` on resize). Pieces: the cburnett set embedded in Chessground's own CSS (GPL-2.0-or-later, see THIRD_PARTY_NOTICES.md); board colours: Chessground's brown theme. Coordinates are restyled in `globals.css` because the base CSS offsets them for Lichess's page layout. The evaluation graph is a hand-written SVG (`EvalGraph.tsx` + pure geometry in `src/lib/review/evalGraph.ts`); no chart library. Classification badges are our own coloured symbols (standard annotation marks !!, !, ?!, ?, ?? plus ★ ✓ ○ ×), not any site's icons.
+
+### D-023 · 2026-11-11 · Accepted — Frontend tests: Vitest + jsdom + Testing Library (dev only)
+
+`jsdom@31.0.0`, `@testing-library/react@16.3.3`, `@testing-library/dom@10.4.2`, all MIT, dev dependencies only. Component tests opt in with `// @vitest-environment jsdom`; the rest stay in Node. They render the real components (including Chessground) against a frozen depth-16 analysis (`tests/fixtures/opera-review.json`), so no engine is needed.
+
+- Rejected for now: Playwright end-to-end tests (large browser download; the full journey is checked by hand in a real browser and recorded in DEVELOPMENT_STATUS.md). Revisit before launch (Phase 5).
+
+### D-024 · 2026-11-11 · Accepted — `trailingSlash: true` in the static export
+
+Routes are exported as `review/index.html`, so `/review/` works on any static host, including `python -m http.server`, without rewrite rules.
+
+### D-025 · 2026-11-11 · Accepted — Deterministic explanation templates [OURS]
+
+`src/lib/review/explainMove.ts` builds 1–4 sentences per move from the review data only: a sentence for the classification, forced-mate statements from the evaluations, material statements from replaying the engine's main lines (up to 6 plies, extended to the end of a capture sequence), and the expected-score drop for Inaccuracy/Mistake/Miss/Blunder. No language model or paid API (FR-EXP-4). Material wording describes the engine's continuation, not a proof.

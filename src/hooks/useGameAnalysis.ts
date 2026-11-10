@@ -34,7 +34,10 @@ export function useGameAnalysis() {
   useEffect(
     () => () => {
       abortRef.current?.abort();
+      abortRef.current = null;
       engineRef.current?.dispose();
+      // Cleared so a remount (React StrictMode runs effects twice in development) creates a new worker.
+      engineRef.current = null;
     },
     [],
   );
@@ -43,6 +46,8 @@ export function useGameAnalysis() {
     abortRef.current?.abort();
     const controller = new AbortController();
     abortRef.current = controller;
+    // A newer run (or unmount) replaces this one; its late results must not touch state or the engine.
+    const stale = () => abortRef.current !== controller;
 
     let game;
     try {
@@ -57,16 +62,22 @@ export function useGameAnalysis() {
       if (!engineRef.current) {
         engineRef.current = new UciEngine(createBrowserTransport());
       }
-      await engineRef.current.init();
+      const engine = engineRef.current;
+      await engine.init();
+      if (stale()) return;
       setState((s) => ({ ...s, status: "analysing" }));
-      const analysis = await analyzeGame(game, engineRef.current, {
+      const analysis = await analyzeGame(game, engine, {
         ...options,
         cache: cacheRef.current,
         signal: controller.signal,
-        onProgress: ({ done, total }) => setState((s) => ({ ...s, progress: { done, total } })),
+        onProgress: ({ done, total }) => {
+          if (!stale()) setState((s) => ({ ...s, progress: { done, total } }));
+        },
       });
+      if (stale()) return;
       setState((s) => ({ ...s, status: "done", analysis }));
     } catch (error) {
+      if (stale()) return;
       if ((error as Error)?.name === "AbortError") {
         setState((s) => ({ ...s, status: "cancelled" }));
         return;

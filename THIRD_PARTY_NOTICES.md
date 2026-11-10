@@ -15,14 +15,21 @@ This project is licensed under GPL-3.0-or-later (see `LICENSE`). It includes or 
 
 © Jeff Hlywa. https://github.com/jhlywa/chess.js
 
+### Chessground 10.5.0 — GPL-3.0-or-later
+
+© the lichess.org developers. https://github.com/lichess-org/chessground (npm `@lichess-org/chessground@10.5.0`). Bundled into the site's JavaScript and CSS (`chessground.base.css`, `chessground.brown.css`).
+
+### cburnett chess pieces — GPL-2.0-or-later
+
+© Colin M.L. Burnett. The piece SVGs embedded in Chessground's `chessground.cburnett.css`. Licence as listed in Lichess's COPYING.md (https://github.com/lichess-org/lila/blob/master/COPYING.md), checked 2026-11-11. GPL-2.0-or-later is compatible with this project's GPL-3.0-or-later.
+
 ### Next.js, React, React DOM — MIT
 
 © Vercel, Inc. and Meta Platforms, Inc. and affiliates.
 
-## Planned (not yet included)
+## Development only (not distributed)
 
-- `@lichess-org/chessground` — GPL-3.0-or-later (Phase 3).
-- Chess piece set — to be chosen from openly licensed sets and recorded here (Phase 3).
+Vitest, tsx, jsdom, Testing Library (`@testing-library/react`, `@testing-library/dom`), ESLint, TypeScript, Tailwind CSS — MIT. Used for building and testing; not shipped in the site.
 
 ## Methods (not code)
 

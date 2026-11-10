@@ -1,17 +1,19 @@
-import Link from "next/link";
+import { HomeClient } from "@/components/home/HomeClient";
 
-// Placeholder homepage. The real homepage (PGN input, upload, Review game) is Phase 3.
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-2xl px-4 py-16">
-      <h1 className="text-3xl font-semibold">Chess Review</h1>
-      <p className="mt-3 text-neutral-600 dark:text-neutral-400">
-        A free, open-source chess game review that runs Stockfish in your browser. Under construction.
+    <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-10 sm:py-14">
+      <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Free chess game review</h1>
+      <p className="mt-3 max-w-2xl text-muted">
+        Paste a game and Stockfish analyses every move on your own device. You get move labels from Brilliant to Blunder, accuracy
+        for both players, an evaluation graph and explanations. No account, no upload, no paywall.
       </p>
-      <p className="mt-6">
-        <Link className="underline" href="/dev/engine">
-          Engine pipeline developer page
-        </Link>
+      <div className="mt-8">
+        <HomeClient />
+      </div>
+      <p className="mt-8 text-xs text-muted">
+        Your game stays in your browser. Accuracy and move labels are our own documented approximations, not Chess.com&apos;s or
+        Lichess&apos;s exact results.
       </p>
     </main>
   );

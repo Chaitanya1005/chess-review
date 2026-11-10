@@ -230,6 +230,17 @@ A position is **critical** for the side to move when `EP(line1) − EP(line2) �
 | Mate-in-N became cp but still winning (e.g. M5 → +12) | Both clamp near EP 1, so small loss; not a Miss (§6.3). |
 | Promotion moves | UCI includes the piece (`e7e8q`); compared exactly. |
 
+## 12a. Move explanations [OURS] (FR-EXP, D-025)
+
+`src/lib/review/explainMove.ts` turns one `MoveReview` into 1–4 deterministic sentences. No language model.
+
+1. **Classification sentence.** Brilliant: names the sacrificed piece. Great: "The only move that keeps your advantage / holds the position", with the mover's expected score after the engine's second line. Best / Excellent / Good: compares with the engine's top move. Miss: names the opponent's previous move that gave the chance. Inaccuracy / Mistake / Blunder: "`<best>` was better."
+2. **Forced mates**, from the evaluations: "This allows a forced mate in N", "`<best>` would have forced mate in N; this lets it slip", "This forces mate in N", "Checkmate".
+3. **Material**, only when the move was not the engine's choice and no mate sentence applies. The played move plus the engine's reply line, and the engine's best line, are replayed for up to 6 plies (ending after the opponent's reply) and extended while captures continue (at most 4 more plies). "This loses a knight" when the played line loses ≥ 1 pawn of material (Inaccuracy or worse); "You missed winning the queen with `<best>`" when the best line wins ≥ 2 and at least 2 more than the played line. This describes the engine's continuation, not a proof.
+4. **Expected-score drop** for Inaccuracy, Mistake, Miss and Blunder: "Your expected score drops from 37% to 27%."
+
+Known limitation: explanations inherit the classification's view of a lost position. 15...Nxd7 in the Opera Game allows mate in 2 but is labelled Good, because Black's expected score was already ≈ 0 at −11 (see DEVELOPMENT_STATUS.md, known issues). The text says "This allows a forced mate in 2." even though the label is Good.
+
 ## 13. Configurable thresholds
 
 All parameters live in `src/lib/analysis/config.ts` (`REVIEW_CONFIG`) as one object with a version string:
@@ -254,5 +265,5 @@ Changing any value requires bumping `version`, adding an entry to `DECISIONS.md`
 
 - **Unit tests (pure, no engine):** UCI parsing; POV conversion; score ordering; EP function (symmetry `EP_w(x) + EP_w(−x) = 1`, monotonic, mate edges); classification boundaries (each threshold ±ε); Great/Brilliant/Miss on hand-built `PositionAnalysis` fixtures; accuracy bounds and monotonicity; phase detection on known FENs; count reconciliation.
 - **Integration tests (real engine in Node, same WASM build):** PGN → `GameAnalysis` for short games; checks position count, POV consistency, legal best moves, terminal handling, cache hits.
-- **Golden tests (Phase 4):** frozen engine output for benchmark games, so classification changes can be tested without re-running the engine.
+- **Golden tests:** frozen engine output (`tests/fixtures/opera-review.json`, depth 16) drives the explanation and UI tests without an engine. Phase 4 extends this to the benchmark set.
 - **Property tests (later):** accuracy ∈ [0, 100]; counts sum to moves.

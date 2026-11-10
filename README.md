@@ -4,7 +4,7 @@ A free, open-source chess game review that runs entirely in your browser.
 
 Paste a PGN, and Stockfish analyses every position on your own device. You get move classifications (Brilliant, Great, Best, Excellent, Good, Inaccuracy, Mistake, Miss, Blunder), an accuracy score for each player, an estimated game rating, an evaluation graph and explanations. There is no account, no server and no paywall.
 
-> **Status:** early development. The engine pipeline (Phase 1) and the analysis algorithms (Phase 2) are in place; the review UI is not built yet. See [docs/DEVELOPMENT_STATUS.md](docs/DEVELOPMENT_STATUS.md).
+> **Status:** early development. The engine pipeline (Phase 1), the analysis algorithms (Phase 2) and the review UI (Phase 3) work end to end. Nothing is benchmarked against Chess.com yet, and the estimated game rating is uncalibrated. See [docs/DEVELOPMENT_STATUS.md](docs/DEVELOPMENT_STATUS.md).
 
 ## How it compares to Chess.com
 
@@ -25,7 +25,7 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:3000. Phase 1 has a developer page at `/dev/engine` that shows raw engine analysis for a PGN.
+Then open http://localhost:3000, paste a PGN (or pick a sample game) and click **Review game**. A developer page at `/dev/engine` shows the raw engine analysis for a PGN.
 
 ```bash
 npm test

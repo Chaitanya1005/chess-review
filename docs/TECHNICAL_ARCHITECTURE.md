@@ -42,10 +42,11 @@ There is no server-side code, database or authentication.
 | Styling | Tailwind CSS 4 | Final | Requested; no runtime cost. |
 | Chess rules / PGN | `chess.js` 1.4 (BSD-2-Clause) | Final | Maintained, handles SAN/PGN/FEN, gives verbose history with before/after FENs. |
 | Engine | `stockfish` npm 19.0.1 (Stockfish.js by Nathan Rugg / Chess.com, GPL-3.0), **lite single-threaded** flavour | Final for MVP | ≈1.9 MB total, needs no cross-origin isolation, runs on every modern browser (README: Windows 10+/macOS 11+/iOS 16+/Android/Linux). The full nets are ≈94 MB, too large for a quick first load. |
-| Board | `@lichess-org/chessground` 10.x (GPL-3.0-or-later) | Validate (Phase 3) | Mature, touch-friendly, has arrows and square highlights. GPL is fine because the project is GPL anyway. Fallback: `react-chessboard` (MIT). |
-| Charts | Hand-written SVG component | Validate (Phase 3) | The evaluation graph is one area chart with markers; a custom SVG avoids a dependency. Fallback: Recharts (MIT). |
+| Board | `@lichess-org/chessground` 10.5.0 (GPL-3.0-or-later), cburnett pieces | Final (D-022) | Mature, touch-friendly, has arrows and square highlights. GPL is fine because the project is GPL anyway. Fallback: `react-chessboard` (MIT). |
+| Charts | Hand-written SVG component | Final (D-022) | The evaluation graph is one area chart with markers; a custom SVG avoids a dependency. Fallback: Recharts (MIT). |
 | State | React state + `useReducer` + context | Final | One review at a time; no global store library needed. |
 | Unit tests | Vitest | Final | Fast, TypeScript-native, runs Node for real-engine integration tests. |
+| Component tests | jsdom + Testing Library (dev only) | Final (D-023) | Renders the real components against a frozen analysis; no engine needed. |
 | Node scripts | tsx (dev only) | Final | Runs `scripts/analyze-pgn.ts` against the app's own TypeScript modules (D-020). |
 | Lint / format | ESLint (Next config) + Prettier defaults | Final | Standard for contributors. |
 | Hosting | Cloudflare Pages (static) | Validate (Phase 5) | Free tier, serves `.wasm` with the correct MIME type, no file-size issue (largest asset ≈1.8 MB). Vercel static works too. |
@@ -65,15 +66,20 @@ Versions are pinned in `package.json`. Library checks done on 2026-11-10 (npm re
 src/
   app/                    Next.js routes (static)
     page.tsx              Homepage: PGN input + upload + "Review game"
-    review/page.tsx       Review screen (Phase 3)
+    review/page.tsx       Review screen (exported as review/index.html, D-024)
     dev/engine/page.tsx   Phase 1 developer page: raw analysis output
-  components/             React components (board, move list, graph, panels)
+  components/
+    home/HomeClient.tsx   PGN textarea, file upload, presets, sample games, validation
+    review/ReviewScreen   Reads the handed-over game, runs the engine (progress / cancel / retry)
+    review/ReviewView     Full review: Board, EvalBar, PlayerBar, NavControls, MovePanel,
+                          EvalGraph, MoveList, StatsPanel; one reducer holds the selected ply
   lib/
     pgn/                  PGN parsing → ParsedGame
     engine/               Engine interface, UCI parsing, UciEngine, transports
     analysis/             Pipeline + pure calculations (evaluation, expected points,
                           classification, accuracy, rating, phases, statistics)
-    review/               Builds the final GameReview object (Phase 2)
+    review/               buildReview (GameReview) plus pure UI helpers: explainMove,
+                          evalGraph geometry, capturedPieces, navigation reducer, presets
   hooks/                  useGameAnalysis etc.
 public/engine/            Stockfish .js/.wasm, copied from node_modules at install time
 scripts/                  copy-engine.mjs, analyze-pgn.ts (Node review CLI), benchmark tooling (Phase 4)
@@ -86,12 +92,13 @@ Rules:
 - `lib/` has no React imports and no DOM access, except `lib/engine/browserTransport.ts`. This keeps the analysis testable in Node.
 - Components receive data; they do not call the engine directly. The `useGameAnalysis` hook owns the engine lifetime.
 
-## 4. Chessboard integration (Phase 3, Validate)
+## 4. Chessboard integration (Final, D-022)
 
 - Wrap Chessground in a client component (`"use client"`), created in `useEffect` and destroyed on unmount.
 - The board is view-only (`viewOnly: true`, no move input in the MVP); navigation sets `fen`, `lastMove`, `orientation` and `drawable.autoShapes` (best-move arrow).
 - Classification badges are rendered as an absolutely positioned overlay on the destination square.
-- Piece set: Chessground's default CSS uses pieces that are bundled separately; we will use an openly licensed set (for example cburnett, GPL/BSD-family licence) and record it in `THIRD_PARTY_NOTICES.md`. No Chess.com assets.
+- Piece set: the cburnett pieces embedded in Chessground's `chessground.cburnett.css` (GPL-2.0-or-later, recorded in `THIRD_PARTY_NOTICES.md`); board colours from `chessground.brown.css`. Coordinates are restyled in `globals.css`. No Chess.com assets.
+- Touch: a horizontal swipe on the board steps to the next/previous move (FR-BOARD-8); buttons are 44 px high (MOB-2).
 
 ## 5. PGN parsing
 
@@ -273,7 +280,7 @@ interface GameAnalysis {
 ## 14. Third-party dependencies and licensing
 
 - **Stockfish / Stockfish.js — GPL-3.0.** We redistribute the unmodified engine files. Obligations: ship the licence text, give a prominent notice, and provide access to the corresponding source (link to the exact release tag of `nmrugg/stockfish.js` v19.0.1 and to official Stockfish).
-- **Chessground — GPL-3.0-or-later** (Phase 3). Bundled into our JS, so our distributed code must be GPL-compatible.
+- **Chessground — GPL-3.0-or-later**, with the cburnett pieces (GPL-2.0-or-later). Bundled into our JS, so our distributed code must be GPL-compatible.
 - **Project licence: GPL-3.0-or-later** (see `DECISIONS.md` D-004). This satisfies both and keeps the project open.
 - **chess.js — BSD-2-Clause.** Notice kept in `THIRD_PARTY_NOTICES.md`.
 - We do not copy code from Lichess (`lila` is AGPL-3.0). Where we follow a publicly documented Lichess method (win-probability curve, accuracy formula), we implement it ourselves from the published description and cite the source.
